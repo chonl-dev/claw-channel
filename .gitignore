@@ -1,0 +1,6 @@
+# Nur incoming/ und reports/ sind versioniert
+# completed/ ist Archiv
+tasks/completed/
+*.log
+.DS_Store
+.env

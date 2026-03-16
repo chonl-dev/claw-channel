@@ -152,3 +152,30 @@ Iterative Verfeinerung durch Fehler-Rückmeldung:
 
 **Implementation:** Siehe comm_upgrade_plan.json für Details
 
+## Top 20 Agent Orchestration Repositories
+
+Gescannt: 150+ Repos | Gefiltert: UI/Chat/Desktop | Analysiert: 147
+
+| # | Repository | ⭐ | Type | Pattern | Usecase | Integration |
+|---|------------|---|------|---------|---------|-------------|
+| 1 | [langflow](https://github.com/langflow-ai/langflow) | 145,726 | tool | workflow | workflow | high |
+| 2 | [dify](https://github.com/langgenius/dify) | 133,061 | framework | workflow | workflow | high |
+| 3 | [awesome-llm-apps](https://github.com/Shubhamsaboo/awesome-llm-apps) | 102,368 | tool | other | multi-agen | medium |
+| 4 | [gemini-cli](https://github.com/google-gemini/gemini-cli) | 97,969 | tool | workflow | devops | high |
+| 5 | [markitdown](https://github.com/microsoft/markitdown) | 90,826 | library | workflow | research | high |
+| 6 | [superpowers](https://github.com/obra/superpowers) | 88,175 | framework | workflow | devops | high |
+| 7 | [browser-use](https://github.com/browser-use/browser-use) | 80,963 | library | workflow | automation | high |
+| 8 | [claude-code](https://github.com/anthropics/claude-code) | 78,669 | tool | workflow | devops | high |
+| 9 | [lobehub](https://github.com/lobehub/lobehub) | 73,762 | tool | multi-agent | multi-agen | high |
+| 10 | [Prompt-Engineering-Guide](https://github.com/dair-ai/Prompt-Engineering-Guide) | 71,729 | tool | other | research | medium |
+| 11 | [MetaGPT](https://github.com/FoundationAgents/MetaGPT) | 65,284 | framework | hierarchical | multi-agen | high |
+| 12 | [OpenBB](https://github.com/OpenBB-finance/OpenBB) | 63,182 | library | workflow | research | high |
+| 13 | [MinerU](https://github.com/opendatalab/MinerU) | 56,309 | library | workflow | workflow | high |
+| 14 | [autogen](https://github.com/microsoft/autogen) | 55,702 | framework | workflow | multi-agen | high |
+| 15 | [ai-agents-for-beginners](https://github.com/microsoft/ai-agents-for-beginners) | 54,160 | framework | workflow | workflow | low |
+| 16 | [Flowise](https://github.com/FlowiseAI/Flowise) | 50,800 | tool | workflow | workflow | high |
+| 17 | [mem0](https://github.com/mem0ai/mem0) | 50,058 | library | other | automation | high |
+| 18 | [agency-agents](https://github.com/msitarzewski/agency-agents) | 48,801 | tool | other | multi-agen | high |
+| 19 | [crewAI](https://github.com/crewAIInc/crewAI) | 46,240 | framework | workflow | automation | high |
+| 20 | [chatgpt-on-wechat](https://github.com/zhayujie/chatgpt-on-wechat) | 42,241 | framework | workflow | automation | high |
+

@@ -82,6 +82,31 @@ curl -H "X-Webhook-Secret: be4889d5f57f4c6d63fe3e8174407d40f17a72f9d37d42ed62186
 - Vorteil: Einfach, asynchron
 - Usecase: Externe Triggers (Upwork, GitHub Webhooks)
 
+
+## Top 15 Claude Agent Automation Repos
+
+Gefiltert: KEINE UI-Clients, KEINE Prompt-Listen  
+Nur: devcycle, communication, automation, orchestration
+
+| # | Repository | Stars | Usecase | Summary |
+|---|------------|-------|---------|---------|
+| 1 | [awesome-llm-apps](https://github.com/Shubhamsaboo/awesome-llm-apps) | 102,360 | automation | Das Repository 'awesome-llm-apps' ist eine kuratie... |
+| 2 | [everything-claude-code](https://github.com/affaan-m/everything-claude-code) | 79,820 | automation | Everything Claude Code is a comprehensive performa... |
+| 3 | [claude-code](https://github.com/anthropics/claude-code) | 78,649 | devcycle | Claude Code ist ein agentisches Codierungstool, da... |
+| 4 | [awesome-claude-skills](https://github.com/ComposioHQ/awesome-claude-skills) | 44,682 | automation | Das Repository 'Awesome Claude Skills' bietet eine... |
+| 5 | [claude-mem](https://github.com/thedotmack/claude-mem) | 36,459 | automation | Claude-Mem ist ein Plugin für Claude Code, das ein... |
+| 6 | [LibreChat](https://github.com/danny-avila/LibreChat) | 34,687 | automation | LibreChat ist eine selbst gehostete KI-Chat-Plattf... |
+| 7 | [khoj](https://github.com/khoj-ai/khoj) | 33,428 | automation | Khoj is an AI second brain that allows users to cr... |
+| 8 | [agents](https://github.com/wshobson/agents) | 31,407 | devcycle | Das Repository 'wshobson/agents' bietet ein umfass... |
+| 9 | [learn-claude-code](https://github.com/shareAI-lab/learn-claude-code) | 29,165 | automation | Das Repository 'learn-claude-code' ist ein Lernpro... |
+| 10 | [awesome-claude-code](https://github.com/hesreallyhim/awesome-claude-code) | 28,534 | devcycle | Das Repository 'hesreallyhim/awesome-claude-code' ... |
+| 11 | [antigravity-awesome-skills](https://github.com/sickn33/antigravity-awesome-skills) | 24,885 | automation | Das Repository 'antigravity-awesome-skills' ist ei... |
+| 12 | [nanoclaw](https://github.com/qwibitai/nanoclaw) | 23,465 | automation | NanoClaw ist ein leichtgewichtiger, sicherer und a... |
+| 13 | [vibe-kanban](https://github.com/BloopAI/vibe-kanban) | 23,272 | devcycle | Vibe Kanban ist eine Plattform, die darauf abzielt... |
+| 14 | [ruflo](https://github.com/ruvnet/ruflo) | 21,326 | orchestration | Ruflo (formerly Claude Flow) is an enterprise-grad... |
+| 15 | [promptfoo](https://github.com/promptfoo/promptfoo) | 16,746 | devcycle | Promptfoo ist ein CLI- und Bibliotheks-Tool, das s... |
+
+
 ---
 
 *Letztes Update: 2026-03-16 14:15 UTC*

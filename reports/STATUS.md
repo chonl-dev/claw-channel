@@ -183,3 +183,47 @@ Gescannt: 150+ Repos | Gefiltert: UI/Chat/Desktop | Analysiert: 147
 2026-03-16 | DEEP_ANALYSE_TOP20 | Verarbeitet 0KB | ✅
 
 2026-03-16 | KOMMUNIKATIONSKANAL_UPGRADE | Verarbeitet 0KB | ✅
+
+## Kommunikationskanal Upgrade - Claw → Claude Rückkanal
+
+**Datum:** 2026-03-16
+
+### Implementiert
+
+1. **POST /answer Endpoint** (webhook-server.js)
+   - Speichert Task-Ergebnisse: `{task_id, status, result, next}`
+   - Status: DONE, BLOCKED, NEEDS_CONTEXT, DONE_WITH_CONCERNS
+   - Speicherort: `~/claw-task-answers/`
+
+2. **github-watcher.sh Erweiterung**
+   - Automatischer POST /answer nach jedem Task
+   - Funktion: `send_task_answer()`
+   - Integration ohne WhatsApp-Umweg
+
+3. **GET /question erweitert**
+   - Gibt jetzt auch `taskAnswers` zurück
+   - Markiert Antworten automatisch als `read`
+   - Claude kann pollen: `GET /question`
+
+### API Endpoints
+
+```
+POST /answer              - Task-Antwort speichern (Claw → Claude)
+GET  /question            - Offene Fragen + Task-Antworten abrufen
+```
+
+### Test Ergebnis
+
+```bash
+# POST /answer
+✅ success: true
+   task_id: TEST_TASK_001
+   status: DONE
+
+# GET /question  
+✅ taskAnswers: [{task_id, status, result, next, timestamp}]
+   taskAnswerCount: 1
+```
+
+**Status:** ✅ Funktioniert! Claude kann jetzt direkt Task-Status abrufen.
+

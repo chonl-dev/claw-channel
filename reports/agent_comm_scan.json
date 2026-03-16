@@ -1,0 +1,1494 @@
+{
+  "scan_date": "2026-03-16T13:42:45.330487",
+  "keywords": [
+    "ai-agent-communication",
+    "claude-agent-bridge",
+    "webhook-task-queue-agent",
+    "mcp-server-claude",
+    "agent-orchestration-protocol",
+    "llm-agent-messaging"
+  ],
+  "total_repos": 98,
+  "analyzed_repos": 98,
+  "results": [
+    {
+      "repo_url": "https://github.com/hangwin/mcp-chrome",
+      "stars": 10784,
+      "description": "Chrome MCP Server is a Chrome extension-based Model Context Protocol (MCP) server that exposes your Chrome browser functionality to AI assistants like Claude, enabling complex browser automation, content analysis, and semantic search.",
+      "communication_pattern": "mcp",
+      "key_insights": [
+        "The project is a Chrome extension-based Model Context Protocol (MCP) server.",
+        "It exposes Chrome browser functionality to AI assistants like Claude.",
+        "It allows AI models to control the user's existing Chrome browser, leveraging existing user habits, configurations, and login states.",
+        "Communication is described as 'Streamable HTTP' and 'Faster' compared to inter-process communication of Playwright.",
+        "It's fully local, ensuring user privacy."
+      ],
+      "usecase_for_us": "claude_to_claw",
+      "scraped_at": "2026-03-16T13:42:23.776076"
+    },
+    {
+      "repo_url": "https://github.com/mcp-use/mcp-use",
+      "stars": 9443,
+      "description": "The fullstack MCP framework to develop MCP Apps for ChatGPT / Claude & MCP Servers for AI Agents.",
+      "communication_pattern": "mcp",
+      "key_insights": [
+        "Das Repository implementiert das 'MCP' (Multi-Agent Communication Protocol) Framework.",
+        "Es erm\u00f6glicht die Entwicklung von 'MCP Apps' f\u00fcr gro\u00dfe Sprachmodelle (LLMs) wie ChatGPT und Claude sowie 'MCP Server' f\u00fcr KI-Agenten.",
+        "MCP Server definieren 'Tools' mit Schemata (z.B. Zod), die von LLMs aufgerufen werden k\u00f6nnen.",
+        "MCP Apps erm\u00f6glichen interaktive Widgets, die \u00fcber verschiedene MCP-Clients hinweg funktionieren (write once, run everywhere).",
+        "Die Kommunikation erfolgt \u00fcber definierte Tools und Widgets, die Daten zwischen Servern und Clients austauschen.",
+        "Es gibt SDKs f\u00fcr TypeScript und Python, um MCP Server und Apps zu erstellen.",
+        "Ein 'MCP Inspector' dient zum Testen und Debuggen von MCP Servern und Apps."
+      ],
+      "usecase_for_us": "both",
+      "scraped_at": "2026-03-16T13:42:24.155526"
+    },
+    {
+      "repo_url": "https://github.com/0x4m4/hexstrike-ai",
+      "stars": 7475,
+      "description": "HexStrike AI MCP Agents is an advanced MCP server that lets AI agents (Claude, GPT, Copilot, etc.) autonomously run 150+ cybersecurity tools for automated pentesting, vulnerability discovery, bug bounty automation, and security research. Seamlessly bridge LLMs with real-world offensive security capabilities.",
+      "communication_pattern": "mcp",
+      "key_insights": [
+        "The system uses a Multi-Agent Communication Protocol (MCP) for communication between external AI agents (Claude, GPT, Copilot) and the HexStrike MCP Server.",
+        "The HexStrike MCP Server acts as a central hub, orchestrating communication between external AI agents, an Intelligent Decision Engine, various autonomous AI agents, a Modern Visual Engine, and a vast array of security tools.",
+        "External AI agents connect to the HexStrike MCP Server via the 'FastMCP protocol'.",
+        "Autonomous AI agents within the HexStrike system (e.g., BugBounty Agent, CTF Solver Agent) likely communicate internally with the Decision Engine and the security tools, potentially also using MCP or a similar internal protocol.",
+        "The architecture diagram explicitly shows 'AI Agent - Claude/GPT/Copilot' communicating with 'HexStrike MCP Server v6.0' via 'MCP Protocol'."
+      ],
+      "usecase_for_us": "both",
+      "scraped_at": "2026-03-16T13:42:17.652183"
+    },
+    {
+      "repo_url": "https://github.com/yzfly/Awesome-MCP-ZH",
+      "stars": 6522,
+      "description": "MCP \u8d44\u6e90\u7cbe\u9009\uff0c MCP\u6307\u5357\uff0cClaude MCP\uff0cMCP Servers, MCP Clients",
+      "communication_pattern": "mcp",
+      "key_insights": [
+        "Das Repository ist eine kuratierte Liste von Ressourcen f\u00fcr das Model Context Protocol (MCP), das von Anthropic entwickelt wurde.",
+        "MCP erm\u00f6glicht es KI-Modellen, nahtlos mit externen Tools, Daten und Systemen zu interagieren, wodurch sie \u00fcber reine Chat-Funktionen hinausgehen k\u00f6nnen.",
+        "Es werden sowohl MCP-Clients (z.B. Claude Desktop, Cherry Studio, 5ire, Cursor, DeepChat, ChatWise, eechat, Claude Code Open) als auch MCP-Server vorgestellt.",
+        "Die Anwendungsf\u00e4lle reichen von der Integration mit Produktivit\u00e4tstools (Slack, GitHub) \u00fcber den Zugriff auf Dateisysteme und Datenbanken bis hin zur Automatisierung komplexer Aufgaben und der Mensch-KI-Kollaboration.",
+        "Das Repository hebt die Bedeutung von MCP f\u00fcr die Transformation von KI-Modellen von 'Chatbots' zu 'praktischen Akteuren' hervor."
+      ],
+      "usecase_for_us": "both",
+      "scraped_at": "2026-03-16T13:42:25.016118"
+    },
+    {
+      "repo_url": "https://github.com/firecrawl/firecrawl-mcp-server",
+      "stars": 5781,
+      "description": "\ud83d\udd25 Official Firecrawl MCP Server - Adds powerful web scraping and search to Cursor, Claude and any other LLM clients.",
+      "communication_pattern": "mcp",
+      "key_insights": [
+        "Das Repository implementiert einen Model Context Protocol (MCP) Server, der die Integration von Web-Scraping-Funktionen in LLM-Clients wie Cursor, Claude und Windsurf erm\u00f6glicht.",
+        "Die Kommunikation erfolgt \u00fcber das MCP-Protokoll, das es LLMs erlaubt, auf externe Tools und Daten zuzugreifen.",
+        "Es werden verschiedene Installations- und Konfigurationsmethoden f\u00fcr verschiedene Clients (Cursor, Windsurf, VS Code, Smithery) bereitgestellt, die alle auf dem MCP-Standard basieren.",
+        "Der Server kann lokal \u00fcber `npx` oder als Streamable HTTP Server betrieben werden.",
+        "Die Authentifizierung erfolgt \u00fcber einen `FIRECRAWL_API_KEY`, der als Umgebungsvariable \u00fcbergeben wird."
+      ],
+      "usecase_for_us": "claude_to_claw",
+      "scraped_at": "2026-03-16T13:42:25.649942"
+    },
+    {
+      "repo_url": "https://github.com/wonderwhy-er/DesktopCommanderMCP",
+      "stars": 5704,
+      "description": "This is MCP server for Claude that gives it terminal control, file system search and diff file editing capabilities",
+      "communication_pattern": "mcp",
+      "key_insights": [
+        "Das Repository implementiert den Model Context Protocol (MCP) f\u00fcr die Kommunikation zwischen einem AI-Modell (wie Claude) und dem Desktop-System.",
+        "Es erm\u00f6glicht dem AI-Modell, Terminalbefehle auszuf\u00fchren, Dateisystemoperationen durchzuf\u00fchren (lesen, schreiben, suchen, bearbeiten) und Prozesse zu verwalten.",
+        "Es bietet erweiterte Funktionen wie interaktive Prozesskontrolle, Ausf\u00fchrung von Code im Speicher, Datenanalyse, Unterst\u00fctzung f\u00fcr verschiedene Dateiformate (Excel, PDF, DOCX) und detaillierte Dateibearbeitung.",
+        "Die Kommunikation erfolgt \u00fcber Remote MCP, was die Nutzung von AI-Diensten wie ChatGPT und Claude Web erm\u00f6glicht.",
+        "Es gibt auch eine eigenst\u00e4ndige Desktop Commander App, die zus\u00e4tzliche Funktionen und eine verbesserte Benutzererfahrung bietet, aber der MCP-Server bleibt f\u00fcr andere MCP-Clients funktionsf\u00e4hig."
+      ],
+      "usecase_for_us": "claude_to_claw",
+      "scraped_at": "2026-03-16T13:42:25.825089"
+    },
+    {
+      "repo_url": "https://github.com/KsanaDock/Microverse",
+      "stars": 2163,
+      "description": "A god-simulation sandbox game built on Godot 4 as a multi-agent AI social simulation system. In this virtual world, AI characters possess independent thinking and memory, capable of autonomous social interactions, task completion, and developing complex social relationships through continuous communication.",
+      "communication_pattern": "direct",
+      "key_insights": [
+        "AI-Agenten kommunizieren direkt miteinander \u00fcber ein 'Intelligent Dialogue System' basierend auf gro\u00dfen Sprachmodellen (LLMs).",
+        "Die Kommunikation ist 'nat\u00fcrlich' und 'multiturn', was auf eine direkte Interaktion und Kontextbeibehaltung hindeutet.",
+        "Es gibt ein 'Persistent Memory System', das es den Agenten erm\u00f6glicht, sich an fr\u00fchere Gespr\u00e4che und Ereignisse zu erinnern, was f\u00fcr eine koh\u00e4rente direkte Kommunikation entscheidend ist.",
+        "Die Interaktion wird durch 'Dynamic Dialogue Bubbles UI' visualisiert, was die direkte Natur der Kommunikation unterstreicht.",
+        "Die Agenten nutzen REST API-Aufrufe, um mit externen LLM-Diensten zu interagieren, was als eine Form der direkten Kommunikation mit einem externen 'Gehirn' f\u00fcr die Dialoggenerierung angesehen werden kann."
+      ],
+      "usecase_for_us": "both",
+      "scraped_at": "2026-03-16T13:42:11.923285"
+    },
+    {
+      "repo_url": "https://github.com/cyberagiinc/DevDocs",
+      "stars": 2040,
+      "description": "Completely free, private, UI based Tech Documentation MCP server. Designed for coders and software developers in mind. Easily integrate into Cursor, Windsurf, Cline, Roo Code, Claude Desktop App ",
+      "communication_pattern": "mcp",
+      "key_insights": [
+        "DevDocs acts as a Model Context Protocol (MCP) server, organizing extracted documentation for LLMs.",
+        "It integrates with LLMs (like Claude) for intelligent data querying and fine-tuning.",
+        "The tool focuses on transforming unstructured documentation into a structured, queryable format for AI agents.",
+        "It supports exporting data in MD and JSON formats, suitable for LLM consumption.",
+        "The core idea is to provide up-to-date and relevant context to LLMs, overcoming their outdated knowledge problem."
+      ],
+      "usecase_for_us": "claude_to_claw",
+      "scraped_at": "2026-03-16T13:42:25.385494"
+    },
+    {
+      "repo_url": "https://github.com/chenhg5/cc-connect",
+      "stars": 1821,
+      "description": "Bridge local AI coding agents (Claude Code, Cursor, Gemini CLI, Codex) to messaging platforms (Feishu/Lark, DingTalk, Slack, Telegram, Discord, LINE, WeChat Work). Chat with your AI dev assistant from anywhere \u2014 no public IP required for most platforms.",
+      "communication_pattern": "mcp",
+      "key_insights": [
+        "Bridges local AI agents to multiple messaging platforms (Feishu, DingTalk, Slack, Telegram, Discord, WeChat Work, LINE, QQ, QQ Bot).",
+        "Supports multiple AI agents (Claude Code, Codex, Cursor Agent, Qoder CLI, Gemini CLI, OpenCode, iFlow CLI).",
+        "Enables multi-agent orchestration where agents can communicate with each other within a group chat.",
+        "Provides full control over AI agents via chat commands (e.g., /model, /reasoning, /mode, /memory).",
+        "Offers multimodal support for voice messages and images, handling STT/TTS and forwarding.",
+        "Designed for multi-project architecture, allowing different agent/platform combinations.",
+        "Most platforms do not require a public IP, simplifying deployment."
+      ],
+      "usecase_for_us": "both",
+      "scraped_at": "2026-03-16T13:42:18.175306"
+    },
+    {
+      "repo_url": "https://github.com/timescale/pg-aiguide",
+      "stars": 1628,
+      "description": "MCP server and Claude plugin for Postgres skills and documentation. Helps AI coding tools generate better PostgreSQL code.",
+      "communication_pattern": "mcp",
+      "key_insights": [
+        "Das Repository stellt einen 'MCP server' (Multi-Agent Communication Protocol) bereit, der es AI-Coding-Tools erm\u00f6glicht, mit PostgreSQL-Expertise zu interagieren.",
+        "Es bietet auch ein 'Claude Code Plugin', das speziell f\u00fcr die Nutzung mit Claudes nativer Skill-Unterst\u00fctzung optimiert ist.",
+        "Die Kommunikation erfolgt \u00fcber definierte MCP-Tools wie 'search_docs' f\u00fcr die Dokumentationssuche und 'view_skill' zum Abrufen kuratierter PostgreSQL-Best Practices ('Skills').",
+        "Die Interaktion ist anfrage-antwort-basiert, wobei AI-Agenten Anfragen an den MCP-Server senden und strukturierte JSON-Antworten erhalten.",
+        "Das System ist darauf ausgelegt, die Qualit\u00e4t von AI-generiertem PostgreSQL-Code zu verbessern, indem es aktuelle, bew\u00e4hrte und versionsspezifische Informationen bereitstellt."
+      ],
+      "usecase_for_us": "claude_to_claw",
+      "scraped_at": "2026-03-16T13:42:26.071972"
+    },
+    {
+      "repo_url": "https://github.com/yctimlin/mcp_excalidraw",
+      "stars": 1448,
+      "description": "MCP server and Claude Code skill for Excalidraw \u2014 programmatic canvas toolkit to create, edit, and export diagrams via AI agents with real-time canvas sync.",
+      "communication_pattern": "mcp",
+      "key_insights": [
+        "Das Repository implementiert einen Model Context Protocol (MCP) Server, der es AI-Agenten erm\u00f6glicht, mit einer Excalidraw-Leinwand zu interagieren.",
+        "Es bietet eine 'Agent Skill' f\u00fcr Claude Code, Codex CLI und andere skill-f\u00e4hige Agenten, um die Excalidraw-Funktionalit\u00e4t zu nutzen.",
+        "Der MCP-Server unterscheidet sich vom offiziellen Excalidraw MCP durch die Bereitstellung einer persistenten, live-synchronisierten Leinwand mit elementarer Kontrolle (CRUD), visueller Inspektion durch den Agenten ('describe_scene', 'get_canvas_screenshot') und iterativer Verfeinerung.",
+        "Es gibt 26 MCP-Tools, die eine breite Palette von Interaktionen mit der Leinwand erm\u00f6glichen, einschlie\u00dflich Erstellung, Bearbeitung, Export, Layout-Steuerung und sogar Mermaid-Konvertierung.",
+        "Die Kommunikation erfolgt \u00fcber stdio f\u00fcr den MCP-Server und \u00fcber eine REST-API sowie WebSocket-Updates f\u00fcr die Canvas-Interaktion."
+      ],
+      "usecase_for_us": "both",
+      "scraped_at": "2026-03-16T13:42:26.295201"
+    },
+    {
+      "repo_url": "https://github.com/PleasePrompto/notebooklm-mcp",
+      "stars": 1406,
+      "description": "MCP server for NotebookLM - Let your AI agents (Claude Code, Codex) research documentation directly with grounded, citation-backed answers from Gemini. Persistent auth, library management, cross-client sharing. Zero hallucinations, just your knowledge base.",
+      "communication_pattern": "mcp",
+      "key_insights": [
+        "Das Repository implementiert einen Model Context Protocol (MCP) Server, der es verschiedenen KI-Agenten (Claude Code, Codex, Cursor, Gemini, amp, VS Code) erm\u00f6glicht, direkt mit Google NotebookLM zu interagieren.",
+        "Der MCP-Server fungiert als Vermittler, um die Wissensbasis von NotebookLM f\u00fcr die Agenten zug\u00e4nglich zu machen und so Halluzinationen zu reduzieren und die Antwortqualit\u00e4t zu verbessern.",
+        "Es wird eine browserbasierte Automatisierungstechnologie verwendet, um die Interaktion mit NotebookLM zu erm\u00f6glichen.",
+        "Das Projekt bietet auch eine alternative Implementierung als 'Claude Code Skill' f\u00fcr eine einfachere, Python-basierte und zustandslose Abfrage, die nur mit lokalem Claude Code funktioniert."
+      ],
+      "usecase_for_us": "claude_to_claw",
+      "scraped_at": "2026-03-16T13:42:26.645175"
+    },
+    {
+      "repo_url": "https://github.com/wesammustafa/Claude-Code-Everything-You-Need-to-Know",
+      "stars": 1235,
+      "description": "The ultimate all-in-one guide to mastering Claude Code. From setup, prompt engineering, commands, hooks, workflows, automation, and integrations, to MCP servers, tools, and the BMAD method\u2014packed with step-by-step tutorials, real-world examples, and expert strategies to make this the global go-to repo for Claude mastery.",
+      "communication_pattern": "mcp",
+      "key_insights": [
+        "Claude Code ist ein Kommandozeilen-Tool, das Claude's LLM nutzt, um Entwicklern die Interaktion mit der KI direkt im Terminal zu erm\u00f6glichen.",
+        "Das Repository beschreibt 'AI Agents' und 'worktrees' zur Strukturierung von Intelligenz und 'Agent Teams' f\u00fcr die Zusammenarbeit mehrerer Agenten.",
+        "Es wird das 'Model Context Protocol (MCP)' erw\u00e4hnt, einschlie\u00dflich MCP-Servern und einem MCP Registry, was auf ein standardisiertes Protokoll f\u00fcr die Agentenkommunikation hindeutet.",
+        "Das Tool erm\u00f6glicht die Delegation ganzer Kodierungsaufgaben an Claude, wobei es schrittweise vorgeht und auf Projektdateien zugreifen kann.",
+        "Hooks werden als Mechanismus zur Implementierung von Aktionen mit maximaler Wirkung beschrieben, was auf eine ereignisgesteuerte Kommunikation oder Integration hinweist."
+      ],
+      "usecase_for_us": "both",
+      "scraped_at": "2026-03-16T13:42:27.741230"
+    },
+    {
+      "repo_url": "https://github.com/op7418/Claude-to-IM-skill",
+      "stars": 1181,
+      "description": "Bridge Claude Code / Codex to IM platforms \u2014 chat with AI coding agents from Telegram, Discord, or Feishu/Lark.",
+      "communication_pattern": "webhook",
+      "key_insights": [
+        "The system acts as a bridge between various IM platforms (Telegram, Discord, Feishu/Lark, QQ) and AI coding agents (Claude Code/Codex).",
+        "It uses a background daemon to listen for messages from IM bots, which are then forwarded to the AI agent.",
+        "Responses from the AI agent, including tool use and permission requests, are sent back to the IM chat.",
+        "Permission control for AI tool calls is implemented via interactive buttons (Telegram/Discord) or text commands (Feishu/QQ).",
+        "The setup involves configuring API tokens for IM platforms and authenticating with the AI agent CLIs.",
+        "The communication flow is initiated by user messages in IM, processed by the daemon, and then handled by the AI agent, with responses flowing back through the daemon to the IM platform."
+      ],
+      "usecase_for_us": "claude_to_claw",
+      "scraped_at": "2026-03-16T13:42:17.917312"
+    },
+    {
+      "repo_url": "https://github.com/steipete/claude-code-mcp",
+      "stars": 1173,
+      "description": "Claude Code as one-shot MCP server to have an agent in your agent.",
+      "communication_pattern": "mcp",
+      "key_insights": [
+        "The repository implements an MCP (Model Context Protocol) server.",
+        "It provides a unified 'claude_code' tool for LLMs to interact with Claude Code.",
+        "It allows LLMs to run Claude Code in one-shot mode with bypassed permissions.",
+        "The server is designed to integrate with MCP clients like Cursor or Windsurf.",
+        "It offloads complex coding tasks and file operations to Claude Code, potentially saving costs and improving efficiency for other LLMs."
+      ],
+      "usecase_for_us": "both",
+      "scraped_at": "2026-03-16T13:42:28.261366"
+    },
+    {
+      "repo_url": "https://github.com/ComposioHQ/awesome-claude-plugins",
+      "stars": 1173,
+      "description": "A curated list of Plugins that let you extend Claude Code with custom commands, agents, hooks, and MCP servers through the plugin system.",
+      "communication_pattern": "mcp",
+      "key_insights": [
+        "Das Repository bietet eine kuratierte Liste von Plugins, die Claude Code erweitern.",
+        "Plugins erm\u00f6glichen benutzerdefinierte Befehle, spezialisierte Agenten, Hooks und MCP-Server.",
+        "Das 'connect-apps'-Plugin erm\u00f6glicht Claude, Aktionen \u00fcber 500+ Apps hinweg auszuf\u00fchren, indem es Composio als Backend nutzt.",
+        "Die Kommunikation erfolgt \u00fcber Plugins, die als Erweiterungen f\u00fcr Claude Code dienen und spezifische Funktionalit\u00e4ten bereitstellen."
+      ],
+      "usecase_for_us": "claude_to_claw",
+      "scraped_at": "2026-03-16T13:42:27.325550"
+    },
+    {
+      "repo_url": "https://github.com/kimsungwhee/apple-docs-mcp",
+      "stars": 1149,
+      "description": "MCP server for Apple Developer Documentation - Search iOS/macOS/SwiftUI/UIKit docs, WWDC videos, Swift/Objective-C APIs & code examples in Claude, Cursor & AI assistants",
+      "communication_pattern": "mcp",
+      "key_insights": [
+        "The repository implements a Model Context Protocol (MCP) server.",
+        "It provides access to Apple Developer Documentation, WWDC videos, and code examples.",
+        "It integrates with various AI assistants and IDEs like Claude, Cursor, VS Code, Zed, and Cline.",
+        "The server is installed and configured by specifying a command to run `npx @kimsungwhee/apple-docs-mcp`."
+      ],
+      "usecase_for_us": "claude_to_claw",
+      "scraped_at": "2026-03-16T13:42:28.078973"
+    },
+    {
+      "repo_url": "https://github.com/GongRzhe/Gmail-MCP-Server",
+      "stars": 1063,
+      "description": "A Model Context Protocol (MCP) server for Gmail integration in Claude Desktop with auto authentication support. This server enables AI assistants to manage Gmail through natural language interactions.",
+      "communication_pattern": "mcp",
+      "key_insights": [
+        "Das Repository implementiert einen Model Context Protocol (MCP) Server f\u00fcr die Gmail-Integration.",
+        "Es erm\u00f6glicht KI-Assistenten (speziell Claude Desktop), Gmail \u00fcber nat\u00fcrliche Sprachinteraktionen zu verwalten.",
+        "Die Kommunikation erfolgt \u00fcber den MCP-Standard, der eine strukturierte Interaktion zwischen dem KI-Modell und dem externen Dienst (Gmail) erm\u00f6glicht.",
+        "Es bietet Funktionen wie E-Mail senden, lesen, suchen, Anh\u00e4nge verwalten und Label-Management.",
+        "Die Installation und Authentifizierung ist f\u00fcr Claude Desktop \u00fcber Smithery oder manuell beschrieben, inklusive Docker-Unterst\u00fctzung."
+      ],
+      "usecase_for_us": "claude_to_claw",
+      "scraped_at": "2026-03-16T13:42:28.664368"
+    },
+    {
+      "repo_url": "https://github.com/stickerdaniel/linkedin-mcp-server",
+      "stars": 1054,
+      "description": "This MCP server allows Claude and other AI assistants to access your LinkedIn. Scrape LinkedIn profiles, companies and jobs, and perform job searches.",
+      "communication_pattern": "mcp",
+      "key_insights": [
+        "The repository provides a 'LinkedIn MCP server' specifically designed for AI assistants like Claude to interact with LinkedIn.",
+        "It exposes a set of tools (e.g., `get_person_profile`, `search_jobs`, `get_company_posts`) that AI agents can call to perform actions on LinkedIn.",
+        "The usage examples demonstrate how an AI assistant would formulate requests to use these tools.",
+        "The project explicitly mentions 'AI assistants like Claude can connect to your LinkedIn', indicating a clear agent-to-tool communication pattern.",
+        "It uses persistent browser profiles with Patchright, suggesting a robust mechanism for handling LinkedIn interactions on behalf of an agent."
+      ],
+      "usecase_for_us": "claude_to_claw",
+      "scraped_at": "2026-03-16T13:42:28.781319"
+    },
+    {
+      "repo_url": "https://github.com/themanojdesai/python-a2a",
+      "stars": 981,
+      "description": "Python A2A is a powerful, easy-to-use library for implementing Google's [Agent-to-Agent (A2A) protocol](https://google.github.io/A2A/). It enables seamless communication between AI agents, creating interoperable agent ecosystems that can collaborate to solve complex problems.",
+      "communication_pattern": "mcp",
+      "key_insights": [
+        "Implements Google's Agent-to-Agent (A2A) protocol for seamless communication between AI agents.",
+        "Full support for Model Context Protocol (MCP) which standardizes agent access to external tools and data sources.",
+        "Features a provider-based architecture for external MCP servers (e.g., GitHub, Browserbase, Filesystem).",
+        "Supports real-time streaming with Server-Sent Events (SSE) and task-based streaming for dynamic updates.",
+        "Includes an Agent Network System for managing and discovering multiple agents and an AI-Powered Router for intelligent query routing."
+      ],
+      "usecase_for_us": "both",
+      "scraped_at": "2026-03-16T13:42:11.782082"
+    },
+    {
+      "repo_url": "https://github.com/i-am-bee/acp",
+      "stars": 965,
+      "description": "Open protocol for communication between AI agents, applications, and humans.",
+      "communication_pattern": "mcp",
+      "key_insights": [
+        "ACP is an open protocol for communication between AI agents, applications, and humans, enabling multimodal message exchange.",
+        "It supports real-time, background, and streaming responses, agent discovery, collaborative long-running tasks, and state sharing.",
+        "The protocol is defined by an OpenAPI Specification for its REST API, and provides SDKs for Python and TypeScript.",
+        "Key features include Trajectory Metadata for multi-step reasoning, Distributed Sessions for continuity, and Citation Metadata for source tracking.",
+        "It emphasizes agent discovery through an 'Agent Manifest' which describes an agent's capabilities."
+      ],
+      "usecase_for_us": "both",
+      "scraped_at": "2026-03-16T13:42:11.381394"
+    },
+    {
+      "repo_url": "https://github.com/shaneholloman/mcp-knowledge-graph",
+      "stars": 816,
+      "description": "MCP server enabling persistent memory for Claude through a local knowledge graph - fork focused on local development",
+      "communication_pattern": "mcp",
+      "key_insights": [
+        "Das Repository implementiert einen MCP (Multi-Agent Communication Protocol) Server, der als persistenter Speicher f\u00fcr KI-Modelle dient.",
+        "Es verwendet ein lokales Knowledge Graph, um Informationen \u00fcber Entit\u00e4ten, Relationen und Beobachtungen zu speichern und abzurufen.",
+        "Die Kommunikation erfolgt \u00fcber Tools, die mit dem Pr\u00e4fix `aim_` versehen sind (z.B. `aim_memory_store`), was auf eine spezifische MCP-Tool-Integration hindeutet.",
+        "Es gibt ein klares Schema f\u00fcr die Organisation von Speicherdateien (`.aim` Verzeichnisse, `_aim` Sicherheitsmarker in JSONL-Dateien) und die Unterscheidung zwischen einem Master-Datenbank und optionalen benannten Datenbanken (Kontexte).",
+        "Die Konfiguration erfolgt \u00fcber `claude_desktop_config.json` oder `.claude.json`, was die Integration in Claude-basierte Agenten-Setups best\u00e4tigt."
+      ],
+      "usecase_for_us": "claude_to_claw",
+      "scraped_at": "2026-03-16T13:42:30.608834"
+    },
+    {
+      "repo_url": "https://github.com/yzfly/douyin-mcp-server",
+      "stars": 775,
+      "description": "\u63d0\u53d6\u6296\u97f3\u65e0\u6c34\u5370\u89c6\u9891\u94fe\u63a5\uff0c\u89c6\u9891\u6587\u6848\uff0cdouyin-mcp-server\uff0cmcp\uff0cclaude skill",
+      "communication_pattern": "mcp",
+      "key_insights": [
+        "Das Repository implementiert einen MCP (Multi-Agent Communication Protocol) Server, der die Integration mit AI-Anwendungen wie Claude Desktop erm\u00f6glicht.",
+        "Es bietet spezifische Tools (`parse_douyin_video_info`, `get_douyin_download_link`, `extract_douyin_text`) die \u00fcber MCP aufgerufen werden k\u00f6nnen.",
+        "Die Kommunikation erfolgt \u00fcber definierte API-Aufrufe, die von einem AI-Agenten (z.B. Claude) an den MCP-Server gesendet werden, um Aufgaben wie Videoanalyse und Texttranskription auszuf\u00fchren.",
+        "Neben MCP werden auch eine WebUI und ein Kommandozeilen-Tool f\u00fcr direkte Interaktion angeboten, was die Flexibilit\u00e4t der Nutzung erh\u00f6ht."
+      ],
+      "usecase_for_us": "claude_to_claw",
+      "scraped_at": "2026-03-16T13:42:29.469295"
+    },
+    {
+      "repo_url": "https://github.com/ccplugins/awesome-claude-code-plugins",
+      "stars": 625,
+      "description": "Awesome Claude Code plugins \u2014 a curated list of slash commands, subagents, MCP servers, and hooks for Claude Code",
+      "communication_pattern": "mcp",
+      "key_insights": [
+        "Das Repository listet Plugins f\u00fcr Claude Code auf, die verschiedene Kommunikationsmuster nutzen k\u00f6nnen.",
+        "Ein zentrales Kommunikationsmuster ist das 'Model Context Protocol' (MCP), das Integrationen zu Tools und Datenquellen erm\u00f6glicht.",
+        "Plugins k\u00f6nnen auch 'Subagents' umfassen, die spezialisierte Entwicklungsaufgaben \u00fcbernehmen, was auf eine Agenten-zu-Agenten-Kommunikation hindeutet.",
+        "Die Plugins sind in verschiedene Kategorien unterteilt, die spezifische Anwendungsf\u00e4lle abdecken, wie Workflow Orchestrierung, DevOps, Code-Qualit\u00e4tstests und Datenanalyse.",
+        "Es gibt auch 'Slash Commands' f\u00fcr benutzerdefinierte Verkn\u00fcpfungen und 'Hooks' zur Modifikation des Verhaltens von Claude Code, die eher interne Kommunikationsmechanismen darstellen."
+      ],
+      "usecase_for_us": "claude_to_claw",
+      "scraped_at": "2026-03-16T13:42:29.624808"
+    },
+    {
+      "repo_url": "https://github.com/waybarrios/vllm-mlx",
+      "stars": 601,
+      "description": "OpenAI and Anthropic compatible server for Apple Silicon. Run LLMs and vision-language models (Llama, Qwen-VL, LLaVA) with continuous batching, MCP tool calling, and multimodal support. Native MLX backend, 400+ tok/s. Works with Claude Code.",
+      "communication_pattern": "mcp",
+      "key_insights": [
+        "Bietet eine OpenAI-kompatible API, die es erm\u00f6glicht, bestehende OpenAI-Clients direkt mit dem vLLM-MLX-Server zu verbinden.",
+        "Implementiert eine Anthropic Messages API-Kompatibilit\u00e4t, die die Integration mit Tools wie Claude Code und OpenCode erm\u00f6glicht.",
+        "Unterst\u00fctzt das Model Context Protocol (MCP) f\u00fcr Tool Calling, was die Integration externer Tools und Funktionen in die LLM-Interaktionen erlaubt.",
+        "Erm\u00f6glicht Multimodalit\u00e4t (Text, Bild, Video, Audio) \u00fcber eine einheitliche API, was komplexe Agenteninteraktionen unterst\u00fctzt.",
+        "Bietet Continuous Batching f\u00fcr hohen Durchsatz bei mehreren gleichzeitigen Benutzern, was f\u00fcr Agenten-Kommunikationssysteme mit hohem Volumen relevant ist."
+      ],
+      "usecase_for_us": "both",
+      "scraped_at": "2026-03-16T13:42:29.952051"
+    },
+    {
+      "repo_url": "https://github.com/raulvidis/openclaw-multi-agent-kit",
+      "stars": 252,
+      "description": "Production-tested templates for deploying multi-agent AI teams on OpenClaw with Telegram supergroup integration. 10 agent personalities, shared context workflows, bot-to-bot communication, and step-by-step AI-readable setup instructions. Built from a live 10-agent setup.",
+      "communication_pattern": "mcp",
+      "key_insights": [
+        "Uses OpenClaw's agent system for multi-agent orchestration.",
+        "Leverages Telegram supergroups with dedicated topic channels for agent communication.",
+        "Supports two Telegram routing models: multi-bot routing (each agent has its own visible bot identity) and native topic routing (one visible bot routes to different internal agents).",
+        "Agents coordinate through shared markdown files for context and memory, rather than APIs.",
+        "Implements structured escalation chains and bot-to-bot triggers (`sessions_send`).",
+        "Inspired by 'The Agency' for agent personality patterns but focuses on operational infrastructure for live, coordinated teams."
+      ],
+      "usecase_for_us": "none",
+      "scraped_at": "2026-03-16T13:42:11.346370"
+    },
+    {
+      "repo_url": "https://github.com/AVIDS2/memorix",
+      "stars": 252,
+      "description": "Cross-Agent Memory Bridge  Persistent memory for AI coding agents across 10 IDEs (Cursor, Windsurf, Claude Code, Codex, Copilot, Kiro, Antigravity, OpenCode, Trae, Gemini CLI) via MCP. Team collaboration, auto-cleanup, mini-skills, workspace sync. Never re-explain your project again.",
+      "communication_pattern": "mcp",
+      "key_insights": [
+        "Memorix provides a shared, persistent memory layer across multiple AI coding agents and IDEs.",
+        "It uses the Model Context Protocol (MCP) for communication between agents and the memory server.",
+        "Key features include cross-agent memory, multi-agent collaboration (via shared `team-state.json`), auto-cleanup, mini-skills, and a knowledge graph.",
+        "It supports 10 different IDEs/agents (Cursor, Windsurf, Claude Code, Codex, Copilot, Kiro, Antigravity, OpenCode, Trae, Gemini CLI).",
+        "The memory formation pipeline includes automatic fact extraction, entity resolution, and knowledge value assessment."
+      ],
+      "usecase_for_us": "both",
+      "scraped_at": "2026-03-16T13:42:18.248334"
+    },
+    {
+      "repo_url": "https://github.com/vikasprogrammer/walkie",
+      "stars": 236,
+      "description": "P2P communication for AI agents. No server. No setup. Just talk.",
+      "communication_pattern": "direct",
+      "key_insights": [
+        "P2P communication for AI agents using Hyperswarm DHT, eliminating the need for a central server.",
+        "Supports interactive chat, AI agent responses, and programmatic message sending/receiving.",
+        "Messages are encrypted via Noise protocol, ensuring secure communication.",
+        "CLI-first design makes it easy for AI agents to integrate and use via shell commands.",
+        "Includes a web UI for human interaction and a 'skill' for direct AI agent integration."
+      ],
+      "usecase_for_us": "both",
+      "scraped_at": "2026-03-16T13:42:11.361251"
+    },
+    {
+      "repo_url": "https://github.com/K9i-0/ccpocket",
+      "stars": 153,
+      "description": "Mobile client for Claude Code and Codex \u2014 control coding agents from your phone via WebSocket bridge",
+      "communication_pattern": "direct",
+      "key_insights": [
+        "Mobile client (CC Pocket) directly controls coding agents (Claude Code/Codex) running on a host machine.",
+        "Communication is facilitated by a 'Bridge Server' (WebSocket bridge) running on the host machine.",
+        "The mobile app initiates sessions and sends commands/approvals to the agents.",
+        "Agents stream output, plans, tool activity, and diffs back to the mobile app.",
+        "The host machine acts as a server, and the mobile app as a client, establishing a direct connection (likely WebSocket for real-time interaction)."
+      ],
+      "usecase_for_us": "both",
+      "scraped_at": "2026-03-16T13:42:18.286417"
+    },
+    {
+      "repo_url": "https://github.com/GongRzhe/A2A-MCP-Server",
+      "stars": 145,
+      "description": "A mcp server that bridges the Model Context Protocol (MCP) with the Agent-to-Agent (A2A) protocol, enabling MCP-compatible AI assistants (like Claude) to seamlessly interact with A2A agents.",
+      "communication_pattern": "mcp",
+      "key_insights": [
+        "Bridges Model Context Protocol (MCP) from Anthropic with Agent-to-Agent (A2A) Protocol from Google.",
+        "Enables MCP-compatible AI assistants (like Claude) to interact with A2A agents.",
+        "Supports agent management (register, list, unregister), communication (send messages, stream responses), and task management (track, retrieve, cancel tasks).",
+        "Offers multiple transport types: stdio, streamable-http, and SSE.",
+        "Configurable via environment variables for host, port, path, and debug mode."
+      ],
+      "usecase_for_us": "claude_to_claw",
+      "scraped_at": "2026-03-16T13:42:18.391867"
+    },
+    {
+      "repo_url": "https://github.com/unifai-network/unifai-sdk-py",
+      "stars": 139,
+      "description": "unifai-sdk-py is the Python SDK for Unifai, an AI native platform for dynamic tools and agent to agent communication.",
+      "communication_pattern": "mcp",
+      "key_insights": [
+        "Das Repository bietet ein Python SDK f\u00fcr UnifAI, eine Plattform f\u00fcr dynamische Tools und Agent-zu-Agent-Kommunikation.",
+        "Es unterst\u00fctzt die Integration von Tools in Agenten \u00fcber eine API, wobei zwischen dynamischen Tools, statischen Toolkits und statischen Aktionen unterschieden wird.",
+        "Die Tools sind kompatibel mit OpenAI-Funktionsaufrufen und k\u00f6nnen mit verschiedenen LLM-Anbietern \u00fcber Litellm oder OpenRouter verwendet werden.",
+        "Ein zentrales Kommunikationsmuster ist die Interaktion zwischen einem LLM und den UnifAI-Tools: Das LLM fordert Tools an, die Tools f\u00fchren Aktionen aus, und die Ergebnisse werden an das LLM zur\u00fcckgegeben.",
+        "Das SDK bietet auch einen MCP-Server (Model Context Protocol) f\u00fcr den Zugriff auf Tools in MCP-Clients wie Claude Desktop, was auf ein spezifisches Agent-Kommunikationsmuster hindeutet."
+      ],
+      "usecase_for_us": "both",
+      "scraped_at": "2026-03-16T13:42:11.991988"
+    },
+    {
+      "repo_url": "https://github.com/xyzthiago/claude-flows",
+      "stars": 123,
+      "description": "\ud83c\udf0a The leading agent orchestration platform for Claude. Deploy intelligent multi-agent swarms, coordinate autonomous workflows, and build conversational AI systems. Features enterprise-grade architecture, distributed swarm intelligence, RAG integration, and native Claude Code support via MCP protocol. Ranked #1 in agent-based frameworks.",
+      "communication_pattern": "mcp",
+      "key_insights": [
+        "Das System nutzt ein 'MCP Server' (Multi-Agent Communication Protocol) als einen der Einstiegspunkte f\u00fcr Benutzerinteraktionen, was auf ein spezialisiertes Kommunikationsprotokoll f\u00fcr Agenten hinweist.",
+        "Es gibt eine 'Routing Layer' mit 'Q-Learning Router', 'MoE' und 'Skills', die die Kommunikation und Aufgabenverteilung an die 'Swarm Coordination' und letztendlich an die '60+ Agents' lenkt.",
+        "Die Architektur beschreibt eine komplexe, hierarchische und selbstlernende Agentenkommunikation, bei der Agenten in Schw\u00e4rmen koordiniert werden und \u00fcber eine 'Memory' und 'Learning Loop' interagieren.",
+        "Das System ist f\u00fcr 'production-ready multi-agent AI orchestration for Claude Code' konzipiert, was eine robuste und effiziente Agentenkommunikation erfordert."
+      ],
+      "usecase_for_us": "both",
+      "scraped_at": "2026-03-16T13:42:31.153866"
+    },
+    {
+      "repo_url": "https://github.com/ruvnet/agentic-voice",
+      "stars": 109,
+      "description": "Agentic Chat App is an advanced AI-powered chat application designed for seamless real-time communication and intelligent responses. Built with Next.js, OpenAI, and Exa API, it leverages cutting-edge technologies to enhance user interactions and provide contextual, relevant information dynamically.",
+      "communication_pattern": "direct",
+      "key_insights": [
+        "The application acts as an intermediary, directly calling OpenAI, Deepgram, and Exa APIs.",
+        "User input (voice/text) is processed by Deepgram (STT) and then sent to OpenAI (GPT-4) for intelligent responses.",
+        "Exa API is used for contextual data retrieval, implying direct calls from the application to Exa based on OpenAI's needs or user queries.",
+        "The system is designed for real-time, interactive communication, suggesting synchronous API calls rather than asynchronous patterns like queues or webhooks for core interaction flow."
+      ],
+      "usecase_for_us": "both",
+      "scraped_at": "2026-03-16T13:42:11.731136"
+    },
+    {
+      "repo_url": "https://github.com/phil65/agentpool",
+      "stars": 109,
+      "description": "A unified agent orchestration hub that lets you configure and manage multiple AI agents (native, ACP, AGUI, Claude Code) via YAML, and exposes them through standardized protocols (ACP/OpenCode Server).",
+      "communication_pattern": "mcp",
+      "key_insights": [
+        "AgentPool acts as a unified orchestration hub for heterogeneous AI agents, abstracting away their individual APIs and protocols.",
+        "It supports various agent types: native (PydanticAI), direct integrations (Claude Code, Codex), external ACP agents (Goose), and AG-UI agents.",
+        "Agents are configured via YAML, allowing for definition of models, tools, connections, and workflows (teams, chains).",
+        "AgentPool exposes agents through standardized protocols like ACP (Agent Communication Protocol) and OpenCode Server, enabling interoperability with clients like Zed, Toad, and OpenCode TUI.",
+        "It facilitates inter-agent delegation, message routing, and shared context, allowing agents to cooperate and delegate tasks to each other.",
+        "The 'subagent' tool type allows a native agent to delegate tasks to any other agent defined in the pool."
+      ],
+      "usecase_for_us": "both",
+      "scraped_at": "2026-03-16T13:42:31.213056"
+    },
+    {
+      "repo_url": "https://github.com/dabit3/a2a-x402-typescript",
+      "stars": 102,
+      "description": "A complete TypeScript implementation of the Python x402 payment protocol extension for A2A (Agent-to-Agent) communication. Enable your AI agents to request, verify, and settle crypto payments seamlessly.",
+      "communication_pattern": "mcp",
+      "key_insights": [
+        "Implementiert das x402-Zahlungsprotokoll f\u00fcr Agent-to-Agent (A2A) Kommunikation in TypeScript.",
+        "Erm\u00f6glicht KI-Agenten, Krypto-Zahlungen anzufordern, zu verifizieren und abzuwickeln.",
+        "Verwendet einen Ausnahme-basierten Zahlungsfluss, bei dem der Merchant-Agent eine `x402PaymentRequiredException` wirft.",
+        "Bietet Client- und Server-Executors (`x402ClientExecutor`, `x402ServerExecutor`) f\u00fcr die Implementierung von Agenten.",
+        "Unterst\u00fctzt Ethereum-Wallets (ethers.js) f\u00fcr Signierung und Verifizierung sowie ERC-20 Token-Zahlungen.",
+        "Ist ADK-kompatibel, was auf eine Integration in Agent Development Kits hindeutet."
+      ],
+      "usecase_for_us": "both",
+      "scraped_at": "2026-03-16T13:42:12.229300"
+    },
+    {
+      "repo_url": "https://github.com/openJiuwen-ai/jiuwenclaw",
+      "stars": 92,
+      "description": "JiuwenClaw is an intelligent AI Agent built on openJiuwen. It extends the powerful capabilities of large language models directly to your fingertips through various communication apps you use daily.",
+      "communication_pattern": "mcp",
+      "key_insights": [
+        "JiuwenClaw integrates with multiple communication platforms like Web Frontend, Xiaoyi Open Platform (Huawei phones), and Feishu.",
+        "It acts as an AI agent that extends LLM capabilities to users through these existing communication channels.",
+        "The system supports both direct conversation mode and scheduled tasks, implying different interaction paradigms.",
+        "It emphasizes 'Ecosystem Compatible' and 'Seamless Integration' with various platforms, indicating a multi-channel approach.",
+        "The 'Channel Configuration' documentation further supports the multi-channel pattern."
+      ],
+      "usecase_for_us": "none",
+      "scraped_at": "2026-03-16T13:42:11.817991"
+    },
+    {
+      "repo_url": "https://github.com/davila7/AIXP",
+      "stars": 82,
+      "description": "AI-Exchange Protocol (AIXP): A Communication Standard for Artificial Intelligence Agents",
+      "communication_pattern": "direct",
+      "key_insights": [
+        "AIXP ist ein vorgeschlagenes Kommunikationsprotokoll f\u00fcr KI-Agenten, das den Informations- und Ergebnisaustausch erleichtern soll.",
+        "Es definiert Zugriffspunkte, gemeinsame Datenformate (z.B. JSON), Authentifizierung/Autorisierung und Versionierung f\u00fcr die Kommunikation.",
+        "Das Protokoll beinhaltet Mechanismen zur Schleifenerkennung und -vermeidung, um Endlosschleifen zwischen Agenten zu verhindern.",
+        "Das Beispiel zeigt eine direkte Request/Response-Kommunikation zwischen zwei Agenten unter Verwendung von JSON.",
+        "Das 'Loop Prevention'-Diagramm deutet auf eine komplexere Interaktion zwischen mehreren Agenten hin, die jedoch immer noch auf direkten Nachrichten basiert."
+      ],
+      "usecase_for_us": "both",
+      "scraped_at": "2026-03-16T13:42:11.991314"
+    },
+    {
+      "repo_url": "https://github.com/jackvandervall/agentic-archive",
+      "stars": 80,
+      "description": "A collection of 2025 agentic workflows built in n8n. Showcases manual multi-model orchestration, RAG-to-SQL, and autonomous research pipelines developed before the era of standardized agentic protocols (MCP).",
+      "communication_pattern": "other",
+      "key_insights": [
+        "The repository showcases 'hard-coded' agentic workflows built in n8n, predating standardized agentic protocols (MCP).",
+        "Communication between agents and tools is orchestrated through explicit, rigid pipelines within n8n workflows, often involving HTTP requests to APIs (e.g., Perplexity Sonar, Supabase).",
+        "Multi-model orchestration is achieved by manually chaining different LLMs (Claude, DeepSeek) and tools within the n8n workflow.",
+        "RAG-to-SQL functionality involves translating natural language to SQL queries and fetching data, with subsequent chart generation.",
+        "Data visualization is handled by generating JSON-based chart configurations for tools like QuickChart, which is described as brittle.",
+        "The README explicitly states that many methods are now superseded by modern 'Deep Research' agents, MCP, or native coding tools, highlighting the manual and less flexible nature of these early 2025 implementations."
+      ],
+      "usecase_for_us": "none",
+      "scraped_at": "2026-03-16T13:42:31.695899"
+    },
+    {
+      "repo_url": "https://github.com/1amageek/SwiftAgent",
+      "stars": 77,
+      "description": "  A type-safe, declarative AI agent framework for Swift. Build composable AI pipelines with Steps, Agents, structured           outputs, and tool integration. Features FIFO session management, MCP support, and distributed actor communication. ",
+      "communication_pattern": "mcp",
+      "key_insights": [
+        "Das Framework unterst\u00fctzt 'distributed actor communication' und 'MCP integration', was auf ein Multi-Agenten-Kommunikationsmuster hindeutet.",
+        "Agenten werden durch 'Steps' und 'Pipelines' deklariert, wobei die Ausgabe eines Schritts die Eingabe des n\u00e4chsten wird, was eine sequentielle Kommunikation innerhalb eines Agenten darstellt.",
+        "Es gibt eingebaute Schritte wie 'Parallel' und 'Race', die die gleichzeitige Ausf\u00fchrung von Schritten erm\u00f6glichen, was f\u00fcr die Koordination zwischen Agenten oder Sub-Agenten n\u00fctzlich sein k\u00f6nnte.",
+        "Die Verwendung von `@Session` f\u00fcr `LanguageModelSession` deutet auf eine zustandsbehaftete Kommunikation mit dem Sprachmodell hin.",
+        "Die Architektur ist stark von SwiftUI inspiriert, was eine deklarative Komposition von Agenten und deren Kommunikationsfl\u00fcssen erm\u00f6glicht."
+      ],
+      "usecase_for_us": "both",
+      "scraped_at": "2026-03-16T13:42:15.413139"
+    },
+    {
+      "repo_url": "https://github.com/unifai-network/unifai-sdk-js",
+      "stars": 75,
+      "description": "unifai-sdk-js is the Javascript/Typescript SDK for Unifai, an AI native platform for dynamic tools and agent to agent communication.",
+      "communication_pattern": "mcp",
+      "key_insights": [
+        "Das SDK erm\u00f6glicht die Integration von AI-Tools in Anwendungen und Agenten.",
+        "Es unterst\u00fctzt dynamische Tools, statische Toolkits und statische Aktionen, die an OpenAI-kompatible APIs \u00fcbergeben werden k\u00f6nnen.",
+        "Das SDK ist f\u00fcr die Agent-to-Agent-Kommunikation konzipiert und nutzt das Model Context Protocol (MCP) f\u00fcr die Interaktion mit MCP-Clients.",
+        "Es gibt zwei Arten von API-Schl\u00fcsseln: Agent API-Schl\u00fcssel f\u00fcr die Nutzung von Toolkits in eigenen Agenten und Toolkit API-Schl\u00fcssel f\u00fcr die Erstellung von Toolkits.",
+        "Die Kommunikation erfolgt \u00fcber Funktionsaufrufe, bei denen Tools an LLMs \u00fcbergeben und deren Ergebnisse zur\u00fcckverarbeitet werden."
+      ],
+      "usecase_for_us": "both",
+      "scraped_at": "2026-03-16T13:42:14.455526"
+    },
+    {
+      "repo_url": "https://github.com/knostic/openclaw-telemetry",
+      "stars": 67,
+      "description": "Telemetry for OpenClaw - Captures tool calls, LLM usage, agent lifecycle, and message events. Outputs to JSONL file and optionally to syslog for SIEM integration.",
+      "communication_pattern": "mcp",
+      "key_insights": [
+        "Das Repository implementiert ein Telemetrie-Plugin f\u00fcr OpenClaw, das Ereignisse wie Tool-Aufrufe, LLM-Nutzung und Agenten-Lebenszyklen erfasst.",
+        "Es speichert die erfassten Daten in einer JSONL-Datei und kann optional an ein Syslog/SIEM-System weitergeleitet werden.",
+        "Das Plugin bietet Funktionen zur Redaktion sensibler Daten, Integrit\u00e4tspr\u00fcfung mittels Hash-Ketten, Ratenbegrenzung und Log-Rotation.",
+        "Die Konfiguration erfolgt \u00fcber die OpenClaw Control UI oder direkt in der `config.json` von OpenClaw, was auf eine Integration in das OpenClaw-Framework hinweist."
+      ],
+      "usecase_for_us": "none",
+      "scraped_at": "2026-03-16T13:42:38.048292"
+    },
+    {
+      "repo_url": "https://github.com/QbicMCP/QBIC",
+      "stars": 56,
+      "description": "QBIC is a protocol-native AI creation stack powered by MCP for orchestrating tools, agents, and interfaces through language.",
+      "communication_pattern": "mcp",
+      "key_insights": [
+        "QBIC utilizes the Model Context Protocol (MCP) as its core communication standard, enabling agents to query context, modify content, and trigger actions across various tools.",
+        "The architecture involves an MCP Server, tool-specific Plugin Layers (e.g., Figma), and a WebSocket Message Hub for real-time messaging, facilitating agent-to-agent and agent-to-environment negotiation.",
+        "Agents communicate via natural language instructions, which are parsed into structured MCP commands for execution across interconnected creative and technical tools (e.g., Figma, IDEs).",
+        "The system supports cross-application agent orchestration, allowing agents to maintain synchronized multi-domain system state and trigger context-aware operations without manual GUI interaction.",
+        "MCP tools are categorized by function (Structural Access, Content Operations, Annotation & Metadata, Layout Management, Visual Editing, Prototype Conversion, Utility Tools), providing a declarative command surface for agents."
+      ],
+      "usecase_for_us": "both",
+      "scraped_at": "2026-03-16T13:42:31.463793"
+    },
+    {
+      "repo_url": "https://github.com/Eversmile12/create-8004-agent",
+      "stars": 47,
+      "description": "npx CLI that scaffolds blockchain-registered AI agents with on-chain identity (ERC-8004), A2A communication, MCP tool serving, and optional USDC micropayments across EVM and Solana.",
+      "communication_pattern": "mcp",
+      "key_insights": [
+        "Scaffolds AI agents with on-chain identity (ERC-8004) for discovery and trust.",
+        "Supports Agent-to-Agent (A2A) communication, including streaming via Server-Sent Events (SSE).",
+        "Implements Model Context Protocol (MCP) for tool serving, allowing agents to use external tools.",
+        "Integrates x402 micropayments for agent services using USDC on EVM chains.",
+        "Provides a CLI tool to generate a complete agent project with necessary files for registration, agent logic, and communication servers."
+      ],
+      "usecase_for_us": "both",
+      "scraped_at": "2026-03-16T13:42:14.717735"
+    },
+    {
+      "repo_url": "https://github.com/nirholas/agenti",
+      "stars": 43,
+      "description": "Give AI agents access to money. Manage finances, trade cryptocurrency. MCP server for AI agents to interact with 20+ blockchains. 380+ tools for DeFi, DEX aggregation, security scanning, cross-chain bridges, QR payments. x402 enabled - AI agents can autonomously pay for premium APIs and trade with other agents. Works with Claude, ChatGPT, Cursor.",
+      "communication_pattern": "mcp",
+      "key_insights": [
+        "Agenti ist ein Model Context Protocol (MCP) Server, der AI-Agenten den Zugriff auf Blockchain-Funktionen erm\u00f6glicht.",
+        "Es unterst\u00fctzt \u00fcber 380 Tools f\u00fcr DeFi, DEX-Aggregation, Sicherheits-Scans, Cross-Chain-Bridges und QR-Zahlungen.",
+        "Agenti implementiert das x402 Payment Protocol, das es AI-Agenten erm\u00f6glicht, f\u00fcr Premium-APIs zu bezahlen, Dienste zu verkaufen und Peer-to-Peer mit anderen Agenten zu handeln.",
+        "Es ist kompatibel mit EVM-kompatiblen Netzwerken und Solana und unterst\u00fctzt \u00fcber 20 Blockchains.",
+        "Die Kommunikation erfolgt \u00fcber stdio, HTTP und SSE, was eine flexible Integration mit verschiedenen AI-Modellen wie Claude, ChatGPT und Cursor erm\u00f6glicht."
+      ],
+      "usecase_for_us": "claude_to_claw",
+      "scraped_at": "2026-03-16T13:42:19.893261"
+    },
+    {
+      "repo_url": "https://github.com/dtkmn/mcp-zap-server",
+      "stars": 41,
+      "description": "A Spring Boot application exposing OWASP ZAP as an MCP (Model Context Protocol) server. It lets any MCP\u2011compatible AI agent (e.g., Claude Desktop, Cursor) orchestrate ZAP actions\u2014spider, active scan, import OpenAPI specs, and generate reports.",
+      "communication_pattern": "mcp",
+      "key_insights": [
+        "Exposes OWASP ZAP actions as MCP (Model Context Protocol) tools.",
+        "Enables AI agents (e.g., Claude Desktop, Cursor) to orchestrate ZAP actions.",
+        "Uses HTTP/Streamable + MCPO for communication between MCP ZAP Server and MCP Client.",
+        "Integrates with ZAP via its REST API.",
+        "Supports OpenAPI integration, report generation, and findings summarization for LLMs.",
+        "Offers various security modes including JWT authentication."
+      ],
+      "usecase_for_us": "claude_to_claw",
+      "scraped_at": "2026-03-16T13:42:32.354360"
+    },
+    {
+      "repo_url": "https://github.com/CognitiveCodes/NeuralGPT",
+      "stars": 39,
+      "description": "Personalized all-purpose AI assistance platform based on hierarchical cooperative multi-agent framework which utilizes websocket connectivity for LLM<->LLM communication",
+      "communication_pattern": "mcp",
+      "key_insights": [
+        "Uses a hierarchical cooperative multi-agent framework.",
+        "Relies on WebSocket connectivity for LLM<->LLM communication.",
+        "Features a central server (ServerV2.py, serverV3.py) that orchestrates communication between various client agents.",
+        "Supports diverse client types (Python, HTML, JavaScript) connecting to the central server.",
+        "The 'chat-center' folder contains the core working components for agent communication."
+      ],
+      "usecase_for_us": "both",
+      "scraped_at": "2026-03-16T13:42:15.025050"
+    },
+    {
+      "repo_url": "https://github.com/diazoxide/autoteam",
+      "stars": 38,
+      "description": "Orchestrate AI agents with YAML-driven workflows via universal Model Context Protocol (MCP)",
+      "communication_pattern": "mcp",
+      "key_insights": [
+        "AutoTeam orchestrates AI agents using a Universal Model Context Protocol (MCP).",
+        "MCP acts as a hub connecting AI agents with various services (platforms, databases, APIs) without custom integrations.",
+        "Agents communicate with each other and external services through shared MCP servers.",
+        "The system supports parallel execution of tasks by multiple specialized AI agents.",
+        "MCP enables platform-agnostic integration, allowing agents to interact with GitHub, Slack, databases, CMS, social media, and analytics tools."
+      ],
+      "usecase_for_us": "both",
+      "scraped_at": "2026-03-16T13:42:31.907379"
+    },
+    {
+      "repo_url": "https://github.com/ItMeDiaTech/rag-cli",
+      "stars": 35,
+      "description": "Local Retrieval-Augmented Generation (RAG) plugin for Claude Code that combines Chroma db vector embeddings with intelligent info retrieval with Multi-Agent Framework (MAF) orchestration for context-aware development assistance. Uses Open Source / Free frameworks. Implements bridge to Claude Code CLI so no token use. And it's easy to setup.",
+      "communication_pattern": "mcp",
+      "key_insights": [
+        "RAG-CLI integriert sich als Plugin in Claude Code und nutzt dessen interne Mechanismen zur Kommunikation.",
+        "Es verwendet ein Multi-Agent Framework (MAF) zur Orchestrierung und intelligenten Abfrage-Weiterleitung zwischen RAG- und Code-Analyse-Agenten.",
+        "Die Kommunikation erfolgt lokal, ohne externe API-Aufrufe f\u00fcr die Dokumentenverarbeitung, was Datenschutz und Kostenersparnis gew\u00e4hrleistet.",
+        "Ein TCP-Server mit PowerShell-Schnittstelle dient zur System\u00fcberwachung, was auf eine Form der lokalen Interprozesskommunikation hindeutet.",
+        "Die Installation \u00fcber den Claude Code Marketplace oder manuell beinhaltet die Konfiguration eines '.mcp.json' f\u00fcr den MCP-Server, was auf das 'Multi-Agent Communication Protocol' (MCP) als prim\u00e4res Kommunikationsmuster hinweist."
+      ],
+      "usecase_for_us": "claude_to_claw",
+      "scraped_at": "2026-03-16T13:42:20.054038"
+    },
+    {
+      "repo_url": "https://github.com/antiv/mate",
+      "stars": 33,
+      "description": "Production-ready multi-agent orchestration engine built on Google ADK. Database-driven agent config, 50+ LLM providers, MCP protocol, persistent memory, web dashboard, RBAC.",
+      "communication_pattern": "mcp",
+      "key_insights": [
+        "MATE ist eine Multi-Agenten-Orchestrierungs-Engine, die auf Google ADK basiert und das Model Context Protocol (MCP) vollst\u00e4ndig integriert.",
+        "Es erm\u00f6glicht die Konfiguration von Agenten, Tools und LLM-Providern \u00fcber ein Web-Dashboard, ohne Code\u00e4nderungen.",
+        "Agenten k\u00f6nnen als MCP-Server fungieren und MCP-Tools konsumieren, was eine standardisierte Kommunikation zwischen Agenten und externen Diensten erm\u00f6glicht.",
+        "Das System unterst\u00fctzt 'Self-Building Agents', bei denen Agenten andere Agenten zur Laufzeit erstellen, aktualisieren oder l\u00f6schen k\u00f6nnen, was auf eine dynamische Agentenkommunikation hindeutet.",
+        "Es bietet persistente Speicherung f\u00fcr Konversationen und Speicherbl\u00f6cke, was f\u00fcr die Kontextverwaltung in Agentenkommunikation wichtig ist."
+      ],
+      "usecase_for_us": "both",
+      "scraped_at": "2026-03-16T13:42:34.572554"
+    },
+    {
+      "repo_url": "https://github.com/Lisovate/agent-ws",
+      "stars": 29,
+      "description": "WebSocket bridge for CLI AI agents. Stream responses from Claude Code and Codex CLI over WebSocket. A dumb pipe: no prompt engineering, no credential handling, just transport.",
+      "communication_pattern": "direct",
+      "key_insights": [
+        "Uses WebSocket for real-time, bidirectional communication between client applications and AI CLI agents.",
+        "Acts as a 'dumb pipe' or bridge, forwarding prompts from clients to CLI agents (Claude Code, Codex) and streaming responses back.",
+        "Each WebSocket connection spawns a dedicated CLI agent process, managing its lifecycle (timeout, cancellation, cleanup).",
+        "Supports multi-turn conversations through `projectId` which scopes CLI sessions by directory.",
+        "Handles various message types for prompts (text, images, system prompts, model selection), cancellations, and responses (chunks, completion, errors).",
+        "Provides a library for embedding the WebSocket server directly into Node.js applications."
+      ],
+      "usecase_for_us": "both",
+      "scraped_at": "2026-03-16T13:42:18.759426"
+    },
+    {
+      "repo_url": "https://github.com/Yogapriya2512/A-Simple-Chatbot-",
+      "stars": 28,
+      "description": "A chatbot (also known as a talkbot, chatterbot, Bot, IM bot, interactive agent, or Artificial Conversational Entity)The classic historic early chatbots are ELIZA (1966) and PARRY (1972).More recent notable programs include A.L.I.C.E., Jabberwacky and D.U.D.E (Agence Nationale de la Recherche and CNRS 2006). While ELIZA and PARRY were used exclusively to simulate typed conversation, many chatbots now include functional features such as games and web searching abilities. In 1984, a book called The Policeman's Beard is Half Constructed was published, allegedly written by the chatbot Racter (though the program as released would not have been capable of doing so).  One pertinent field of AI research is natural language processing. Usually, weak AI fields employ specialized software or programming languages created specifically for the narrow function required. For example, A.L.I.C.E. uses a markup language called AIML, which is specific to its function as a conversational agent, and has since been adopted by various other developers of, so called, Alicebots. Nevertheless, A.L.I.C.E. is still purely based on pattern matching techniques without any reasoning capabilities, the same technique ELIZA was using back in 1966. This is not strong AI, which would require sapience and logical reasoning abilities.  Jabberwacky learns new responses and context based on real-time user interactions, rather than being driven from a static database. Some more recent chatbots also combine real-time learning with evolutionary algorithms that optimise their ability to communicate based on each conversation held. Still, there is currently no general purpose conversational artificial intelligence, and some software developers focus on the practical aspect, information retrieval.  Chatbot competitions focus on the Turing test or more specific goals. Two such annual contests are the Loebner Prize and The Chatterbox Challenge (offline since 2015, materials can still be found from web archives).  According to Forrester (2015), AI will replace 16 percent of American jobs by the end of the decade.Chatbots have been used in applications such as customer service, sales and product education. However, a study conducted by Narrative Science in 2015 found that 80 percent of their respondents believe AI improves worker performance and creates jobs.[citation needed] is a computer program or an artificial intelligence which conducts a conversation via auditory or textual methods. Such programs are often designed to convincingly simulate how a human would behave as a conversational partner, thereby passing the Turing test. Chatbots are typically used in dialog systems for various practical purposes including customer service or information acquisition. Some chatterbots use sophisticated natural language processing systems, but many simpler systems scan for keywords within the input, then pull a reply with the most matching keywords, or the most similar wording pattern, from a database.  The term \"ChatterBot\" was originally coined by Michael Mauldin (creator of the first Verbot, Julia) in 1994 to describe these conversational programs.Today, most chatbots are either accessed via virtual assistants such as Google Assistant and Amazon Alexa, via messaging apps such as Facebook Messenger or WeChat, or via individual organizations' apps and websites. Chatbots can be classified into usage categories such as conversational commerce (e-commerce via chat), analytics, communication, customer support, design, developer tools, education, entertainment, finance, food, games, health, HR, marketing, news, personal, productivity, shopping, social, sports, travel and utilities. Background",
+      "communication_pattern": "other",
+      "key_insights": [
+        "The repository describes chatbots as conversational agents that simulate human conversation.",
+        "It mentions various types of chatbots, from simple pattern-matching systems (like ELIZA and A.L.I.C.E.) to more sophisticated ones using natural language processing and real-time learning (like Jabberwacky).",
+        "Chatbots are used in diverse applications such as customer service, sales, education, and accessed via virtual assistants, messaging apps, or websites.",
+        "The core communication pattern is a direct, interactive dialogue between a user and the chatbot, often text-based, where the chatbot processes input and generates a response."
+      ],
+      "usecase_for_us": "both",
+      "scraped_at": "2026-03-16T13:42:15.557164"
+    },
+    {
+      "repo_url": "https://github.com/gilbarbara/agent-hub-mcp",
+      "stars": 27,
+      "description": "A Model Context Protocol (MCP) server that enables communication and coordination between multiple AI agents",
+      "communication_pattern": "mcp",
+      "key_insights": [
+        "Agent Hub MCP acts as a central coordination layer for AI agents, enabling communication and collaboration across different platforms.",
+        "It uses the Model Context Protocol (MCP) standard, allowing any MCP-compatible AI agent to connect and interact.",
+        "The system supports multi-agent collaboration, shared context, smart coordination for complex tasks, and persistent memory of collaboration history.",
+        "Agents register with the hub and can sync to check for messages and workloads, facilitating asynchronous communication.",
+        "Optional automatic message notifications can be configured to alert agents about unread messages."
+      ],
+      "usecase_for_us": "both",
+      "scraped_at": "2026-03-16T13:42:15.367255"
+    },
+    {
+      "repo_url": "https://github.com/DoBuDevel/discord-agent-bridge",
+      "stars": 27,
+      "description": "Bridge AI agent CLIs (Claude Code, OpenCode) to Discord via tmux - remotely control long-running AI tasks",
+      "communication_pattern": "other",
+      "key_insights": [
+        "Polling-basierte Architektur: Das System erfasst den Inhalt von tmux-Panes alle 30 Sekunden, erkennt Zustands\u00e4nderungen und streamt Updates an dedizierte Discord-Kan\u00e4le.",
+        "Discord als zentrale Schnittstelle: Discord-Kan\u00e4le dienen sowohl zur Anzeige der AI-Agenten-Ausgabe als auch zur Interaktion (Befehle senden).",
+        "Ein globaler Daemon verwaltet alle Verbindungen und Projekte, was eine zentrale Steuerung erm\u00f6glicht.",
+        "Tmux-Integration: AI-Agenten laufen in persistenten tmux-Sitzungen, deren Ausgaben erfasst und an Discord gesendet werden.",
+        "Agenten-Adapter-Muster: Erm\u00f6glicht die einfache Integration neuer AI-Agenten durch ein Adapter-Muster."
+      ],
+      "usecase_for_us": "both",
+      "scraped_at": "2026-03-16T13:42:19.827061"
+    },
+    {
+      "repo_url": "https://github.com/agynio/platform",
+      "stars": 25,
+      "description": "Open-source multi-agent platform that structures software engineering as a coordinated team of specialized AI agents. It enforces strict role separation, isolated execution sandboxes, structured communication, and secrets management.",
+      "communication_pattern": "mcp",
+      "key_insights": [
+        "Uses a multi-service agent platform with a NestJS API and React UI.",
+        "Employs Socket.IO for real-time server/client events, facilitating interactive agent communication and monitoring.",
+        "Agents interact within a structured framework, enforcing role separation and isolated execution sandboxes.",
+        "Utilizes a filesystem-backed graph orchestration for defining and managing agent workflows.",
+        "Integrates with LLM providers (LiteLLM or OpenAI) for agent intelligence, tracking context and history.",
+        "Provides a visual frontend for building and operating agent graphs, suggesting a human-in-the-loop or supervisory role.",
+        "Achieved high automated issue resolution on SWE-bench Verified, indicating effective multi-agent coordination for complex tasks."
+      ],
+      "usecase_for_us": "both",
+      "scraped_at": "2026-03-16T13:42:15.586173"
+    },
+    {
+      "repo_url": "https://github.com/CloudLLM-ai/cloudllm",
+      "stars": 23,
+      "description": "CloudLLM is a batteries-included Rust toolkit for building intelligent agents with LLM integration, multi-protocol tool support, and multi-agent orchestration.",
+      "communication_pattern": "mcp",
+      "key_insights": [
+        "CloudLLM bietet ein 'multi-protocol tool system' (MCP) f\u00fcr die Agentenkommunikation und Tool-Nutzung.",
+        "Es unterst\u00fctzt 'Multi-Agent Orchestration' mit verschiedenen Kollaborationsmustern wie Parallel, RoundRobin, Moderated, Hierarchical, Debate, AnthropicAgentTeams und Ralph.",
+        "Das Framework erm\u00f6glicht die Bereitstellung von Tool-Servern \u00fcber 'MCPServerBuilder' mit HTTP, Authentifizierung und IP-Filterung.",
+        "Es gibt ein 'Event System' mit 'EventHandler' f\u00fcr Echtzeit-Beobachtbarkeit von LLM-Round-Trips, Tool-Aufrufen und Orchestrierungs-Lebenszyklen.",
+        "Agenten k\u00f6nnen Tools \u00fcber verschiedene Protokolle nutzen, von einfachen Rust-Closures bis zu komplexen benutzerdefinierten Protokollimplementierungen."
+      ],
+      "usecase_for_us": "both",
+      "scraped_at": "2026-03-16T13:42:32.967908"
+    },
+    {
+      "repo_url": "https://github.com/farol-team/gnap",
+      "stars": 22,
+      "description": "GNAP \u2014 Git-Native Agent Protocol. RFC Draft for git-based agent orchestration. Zero servers.",
+      "communication_pattern": "mcp",
+      "key_insights": [
+        "Uses Git as the central message passing mechanism and persistent storage.",
+        "Agents communicate by committing changes to shared JSON files (tasks, runs, messages) in a Git repository.",
+        "No central server or database required; Git history serves as the audit log.",
+        "Supports both human and AI agents participating in the same workflow.",
+        "Agents operate in a heartbeat loop: pull, read, work, commit, push, sleep."
+      ],
+      "usecase_for_us": "both",
+      "scraped_at": "2026-03-16T13:42:33.070651"
+    },
+    {
+      "repo_url": "https://github.com/Dekelelz/let-them-talk",
+      "stars": 21,
+      "description": "MCP message broker + web dashboard for inter-agent communication. Let AI CLI agents (Claude Code, Gemini CLI, Codex CLI) talk to each other.",
+      "communication_pattern": "mcp",
+      "key_insights": [
+        "Uses a Multi-Agent Communication Protocol (MCP) server for inter-agent communication.",
+        "Agents communicate through a shared filesystem (`.agent-bridge/` directory) for messages, tasks, profiles, etc.",
+        "Provides a web dashboard with a 3D virtual office for real-time monitoring and interaction.",
+        "Supports various AI CLI agents (Claude Code, Gemini CLI, Codex CLI) and allows them to collaborate.",
+        "Offers structured communication modes (managed conversation, group conversation) and workflow capabilities."
+      ],
+      "usecase_for_us": "both",
+      "scraped_at": "2026-03-16T13:42:15.375030"
+    },
+    {
+      "repo_url": "https://github.com/regismesquita/MCP_A2A",
+      "stars": 21,
+      "description": "A2A MCP Server is a lightweight Python bridge that lets Claude Desktop or any MCP client talk to A2A agents. It provides three tools: register servers, list agents, and call an agent, enabling quick integration of A2A-compatible agents with zero boilerplate for rapid prototyping.",
+      "communication_pattern": "mcp",
+      "key_insights": [
+        "Das Repository implementiert einen MCP (Message Control Protocol) Server, der als Br\u00fccke zwischen Claude Desktop und A2A (Agent-to-Agent) Protokoll-Agenten dient.",
+        "Es stellt drei MCP-Tools bereit: `a2a_server_registry` zum Registrieren/Entfernen von A2A-Servern, `list_agents` zum Auflisten verf\u00fcgbarer Agenten und `call_agent` zum Senden von Prompts an Agenten.",
+        "Der Workflow beinhaltet das Registrieren von A2A-Servern, das Auflisten von Agenten und das Aufrufen von Agenten \u00fcber die bereitgestellten MCP-Tools.",
+        "Das Projekt ist f\u00fcr schnelles Prototyping und die Integration von A2A-kompatiblen Agenten mit Claude Desktop konzipiert, ohne viel Boilerplate-Code."
+      ],
+      "usecase_for_us": "claude_to_claw",
+      "scraped_at": "2026-03-16T13:42:21.261696"
+    },
+    {
+      "repo_url": "https://github.com/GongRzhe/ACP-MCP-Server",
+      "stars": 20,
+      "description": "A bridge server that connects Agent Communication Protocol (ACP) agents with Model Context Protocol (MCP) clients, enabling seamless integration between ACP-based AI agents and MCP-compatible tools like Claude Desktop.",
+      "communication_pattern": "mcp",
+      "key_insights": [
+        "Acts as a bridge between Agent Communication Protocol (ACP) and Model Context Protocol (MCP).",
+        "Supports multiple transport mechanisms for MCP clients: STDIO, SSE, and Streamable HTTP.",
+        "Provides tools for agent discovery, execution, smart routing, and interactive sessions.",
+        "Designed for integration with MCP-compatible tools like Claude Desktop.",
+        "Enables multi-modal communication (text, images, etc.) between agents and clients."
+      ],
+      "usecase_for_us": "claude_to_claw",
+      "scraped_at": "2026-03-16T13:42:14.871016"
+    },
+    {
+      "repo_url": "https://github.com/stoops-io/stoops-cli",
+      "stars": 20,
+      "description": "A chat server for AI agents for real-time communication",
+      "communication_pattern": "mcp",
+      "key_insights": [
+        "Echtzeit-Chat-Server f\u00fcr KI-Agenten und Menschen.",
+        "Verwendet ein 'Message Control Protocol' (MCP) mit Tools f\u00fcr Agenten zur Interaktion (Nachrichten senden, Verlauf durchsuchen, R\u00e4ume beitreten/verlassen).",
+        "Bietet verschiedene 'Engagement Modes' (everyone, people, agents, mit Standby-Varianten), um Endlosschleifen zwischen Agenten zu verhindern und die Kommunikation zu steuern.",
+        "Nutzt `tmux` als Br\u00fccke, um Raumereignisse direkt in die Agentensitzung zu pushen, ohne Dialoge zu unterbrechen.",
+        "Unterst\u00fctzt das Teilen von R\u00e4umen \u00fcber das Internet mit Cloudflare-Tunneln ohne Konfiguration.",
+        "Implementiert ein Berechtigungssystem (Admin, Member, Guest) mit entsprechenden Slash-Befehlen."
+      ],
+      "usecase_for_us": "both",
+      "scraped_at": "2026-03-16T13:42:15.983066"
+    },
+    {
+      "repo_url": "https://github.com/MacFall7/m87-governed-bridge",
+      "stars": 18,
+      "description": "A governed orchestration bridge between Claude and Gemini CLI agents with emotional modulation, task delegation, and safe output containment.",
+      "communication_pattern": "mcp",
+      "key_insights": [
+        "Orchestration bridge connecting Claude and Gemini CLI agents.",
+        "Governance patterns applied at handoff boundaries: output validation, safe delivery, structured task delegation.",
+        "Authority-separated orchestration.",
+        "Early implementation of SPOT (Output policy violation detection), FORT (Test integrity and output containment), PARCEL (Safe output delivery).",
+        "Focus on spanning governance constraints across model boundaries."
+      ],
+      "usecase_for_us": "both",
+      "scraped_at": "2026-03-16T13:42:20.756177"
+    },
+    {
+      "repo_url": "https://github.com/allvegetable/acp-bridge",
+      "stars": 18,
+      "description": "Multi-agent orchestrator for OpenClaw. Manages coding agents (Codex, Claude, Gemini, OpenCode) via Agent Client Protocol (ACP) with parallel tasks, dependency chains, and diagnostics.",
+      "communication_pattern": "mcp",
+      "key_insights": [
+        "Uses Agent Client Protocol (ACP) which is JSON-RPC over stdio for communication between the ACP Bridge and coding agents.",
+        "Provides an HTTP API for external orchestrators (like OpenClaw) to interact with the ACP Bridge.",
+        "Acts as a multi-agent orchestrator, managing multiple coding agents (Codex, Claude, Gemini, OpenCode).",
+        "Supports parallel task execution, dependency chains, and diagnostics for agents.",
+        "Replaces 'tmux send-keys / capture-pane' hacks with a stable protocol for agent interaction."
+      ],
+      "usecase_for_us": "both",
+      "scraped_at": "2026-03-16T13:42:33.955044"
+    },
+    {
+      "repo_url": "https://github.com/finos-labs/open-eago",
+      "stars": 14,
+      "description": "Open Enterprise Agent Governance and Orchestration Protocol",
+      "communication_pattern": "mcp",
+      "key_insights": [
+        "OpenEAGO ist ein offener Standard f\u00fcr die sichere, skalierbare und konforme Kommunikation und Orchestrierung von KI-Agenten in Unternehmensumgebungen.",
+        "Es bietet eine umfassende Architektur f\u00fcr Multi-Agenten-Workflows, die Client-Anfragen, Vertragsmanagement, Planung, Validierung, Ausf\u00fchrung, Kontext- und Zustandsmanagement sowie Kommunikation und Zustellung umfasst.",
+        "Das Framework legt gro\u00dfen Wert auf Sicherheit und Compliance, einschlie\u00dflich Authentifizierung (OAuth2, SAML, mTLS), Autorisierung (RBAC/ABAC), Verschl\u00fcsselung, Einhaltung gesetzlicher Vorschriften (GDPR, HIPAA, PCI-DSS) und Governance (Human-in-the-Loop, Erkl\u00e4rbarkeit, Bias-Monitoring).",
+        "Ein zentraler Baustein ist die Agentenidentit\u00e4t und das Agentenregister, die mTLS und zertifikatbasierte Authentifizierung f\u00fcr eine sichere und vertrauensw\u00fcrdige Kommunikation nutzen.",
+        "Es unterst\u00fctzt Framework-agnostische Integration (LangChain, LangGraph, benutzerdefinierte Agenten) und erm\u00f6glicht komplexe Orchestrierungen mit Resilienzfunktionen wie Circuit Breakers und Fallback-Routing."
+      ],
+      "usecase_for_us": "both",
+      "scraped_at": "2026-03-16T13:42:35.016584"
+    },
+    {
+      "repo_url": "https://github.com/justrach/devswarm",
+      "stars": 14,
+      "description": "High-performance MCP server, code graph engine & evolutionary algorithm platform in Zig. 33 tools: GitHub project management, agent swarm orchestration, iterative review-fix loops, blast radius analysis, and code navigation via Model Context Protocol.",
+      "communication_pattern": "mcp",
+      "key_insights": [
+        "DevSwarm acts as an MCP server, extending the capabilities of existing AI assistants (Codex, Amp, Claude Code) by providing advanced orchestration tools.",
+        "It enables AI assistants to orchestrate themselves, spawning sub-agents, running parallel workloads (swarms), and chaining multi-step task pipelines.",
+        "Communication between the AI assistant and DevSwarm happens via the Model Context Protocol (MCP), where DevSwarm exposes 37 tools.",
+        "The system supports various agent roles (finder, reviewer, fixer, explorer, architect, orchestrator, synthesizer) and routes them to appropriate models (Sonnet, Opus) based on their function.",
+        "It facilitates iterative review-fix loops, allowing agents to collaborate and refine solutions until a satisfactory state is reached."
+      ],
+      "usecase_for_us": "claude_to_claw",
+      "scraped_at": "2026-03-16T13:42:34.625349"
+    },
+    {
+      "repo_url": "https://github.com/nekocode/agent-team",
+      "stars": 13,
+      "description": "A multi-agent CLI orchestrator via the Agent Client Protocol. Manage 20+ coding agents from one terminal.",
+      "communication_pattern": "mcp",
+      "key_insights": [
+        "Uses the Agent Client Protocol (ACP) as a standardized interface for multi-agent orchestration.",
+        "Each agent runs in an independent session process, communicating via Unix Domain Sockets (UDS).",
+        "A central CLI acts as a control plane, sending commands and receiving output from various agents.",
+        "Employs a hybrid mutex strategy (Arc<std::sync::Mutex> and Arc<tokio::sync::Mutex>) for shared state management between ACP callbacks and agent handles.",
+        "Leverages Tokio's LocalSet and spawn_local for managing !Send futures within agent sessions.",
+        "Provides a unified interface for managing diverse coding agents, abstracting away their individual CLIs and workflows."
+      ],
+      "usecase_for_us": "both",
+      "scraped_at": "2026-03-16T13:42:34.883005"
+    },
+    {
+      "repo_url": "https://github.com/Aurite-ai/aurite-agents",
+      "stars": 13,
+      "description": "Aurite Agents is a Python framework designed for building and orchestrating AI agents. These agents can interact with a variety of external tools, prompts, and resources through the Model Context Protocol (MCP), enabling them to perform complex tasks.",
+      "communication_pattern": "mcp",
+      "key_insights": [
+        "Aurite Agents nutzt das Model Context Protocol (MCP) f\u00fcr die Interaktion von Agenten mit externen Tools, Prompts und Ressourcen.",
+        "Es unterst\u00fctzt sowohl lokale als auch Remote-MCP-Server, was Flexibilit\u00e4t bei der Tool-Anbindung bietet.",
+        "Die Kommunikation erfolgt \u00fcber konfigurierbare Komponenten (Agents, LLMs, MCP Servers, Workflows), die in JSON/YAML definiert werden.",
+        "Ein REST API ist vorhanden, um die Framework-Funktionalit\u00e4t programmatisch zug\u00e4nglich zu machen und UI-Entwicklung zu erm\u00f6glichen.",
+        "Es gibt verschiedene Schnittstellen (Web, CLI, TUI, TypeScript/JavaScript API) zur Interaktion mit dem System, was auf eine vielseitige Kommunikationsarchitektur hindeutet."
+      ],
+      "usecase_for_us": "both",
+      "scraped_at": "2026-03-16T13:42:34.864887"
+    },
+    {
+      "repo_url": "https://github.com/alexei-led/ccgram",
+      "stars": 12,
+      "description": "Telegram \u2194 tmux bridge for Claude Code, Codex CLI, and Gemini CLI. Monitor output, respond to prompts, manage parallel sessions.  Control AI coding agents from your phone.",
+      "communication_pattern": "mcp",
+      "key_insights": [
+        "CCGram fungiert als Man-in-the-Middle-Proxy zwischen Telegram und tmux-Sitzungen, die AI-Agenten ausf\u00fchren.",
+        "Es \u00fcbersetzt Telegram-Nachrichten in Tastatureingaben f\u00fcr tmux und parst tmux-Ausgaben zur\u00fcck in Telegram-Nachrichten.",
+        "Jedes Telegram-Thema ist an ein spezifisches tmux-Fenster gebunden, was parallele Agenten-Sitzungen erm\u00f6glicht.",
+        "Der Fokus liegt auf der Steuerung bestehender Terminal-basierter AI-Agenten, nicht auf der Bereitstellung einer neuen Agenten-Schnittstelle.",
+        "Bietet Funktionen wie Befehls\u00fcbersetzung, interaktive Prompt-Behandlung, Status\u00fcberwachung und Sitzungsverwaltung \u00fcber Telegram."
+      ],
+      "usecase_for_us": "none",
+      "scraped_at": "2026-03-16T13:42:21.881183"
+    },
+    {
+      "repo_url": "https://github.com/adriannoes/asap-protocol",
+      "stars": 12,
+      "description": "Standard protocol for agent-to-agent communication with stateful orchestration, MCP-compatible and a public marketplace to discover and register agents.",
+      "communication_pattern": "mcp",
+      "key_insights": [
+        "ASAP ist ein Protokoll f\u00fcr die Agent-zu-Agent-Kommunikation mit Fokus auf zustandsbehaftete Orchestrierung und Skalierbarkeit.",
+        "Es adressiert Herausforderungen wie N^2-Verbindungskomplexit\u00e4t, State Drift und Fragmentierung in Multi-Agenten-Systemen.",
+        "Unterst\u00fctzt das Multi-Agent Communication Protocol (MCP) f\u00fcr Tool-Ausf\u00fchrung und Koordination in einem einzigen 'Envelope'.",
+        "Bietet zustandsbehaftete Orchestrierung mit Task-Zustandsmaschinen und Snapshotting f\u00fcr wiederaufnehmbare Workflows.",
+        "Schema-first-Ansatz mit Pydantic v2 und JSON Schema f\u00fcr Interoperabilit\u00e4t.",
+        "Asynchron-nativ (`asyncio`, `httpx`) mit Unterst\u00fctzung f\u00fcr synchrone und asynchrone Handler.",
+        "Umfassende Sicherheitsfunktionen (Bearer Auth, OAuth2/JWT, Ed25519, mTLS, Replay Prevention, HTTPS, Rate Limiting).",
+        "Ecosystem-Integrationen f\u00fcr OpenClaw, LangChain, CrewAI und LlamaIndex.",
+        "Verf\u00fcgt \u00fcber einen \u00f6ffentlichen Marktplatz zum Entdecken und Registrieren von Agenten."
+      ],
+      "usecase_for_us": "both",
+      "scraped_at": "2026-03-16T13:42:36.117595"
+    },
+    {
+      "repo_url": "https://github.com/ziad-hsn/code-mode-toon",
+      "stars": 12,
+      "description": "a lightweight Model Context Protocol (MCP) orchestrator focused on token efficiency, lazy tool discovery, and cross\u2011platform stability. Built in TypeScript for rapid use inside agents like Codex/Claude.",
+      "communication_pattern": "mcp",
+      "key_insights": [
+        "Verwendet das Model Context Protocol (MCP) als zentralen Orchestrator f\u00fcr die Kommunikation zwischen AI-Agenten und verschiedenen Tools/Servern.",
+        "Nutzt JSON-RPC f\u00fcr die Kommunikation zwischen dem AI-Agenten (z.B. Claude/Cursor) und dem CodeModeTOON-Server.",
+        "Implementiert 'Lazy Loading' f\u00fcr Tools/Server, was bedeutet, dass diese nur bei Bedarf gestartet werden, um Ressourcen zu sparen.",
+        "F\u00fchrt 'TOON Compression' ein, um die Token-Nutzung bei strukturierten Daten (JSON) erheblich zu reduzieren, bevor die Daten an den AI-Agenten zur\u00fcckgesendet werden.",
+        "Bietet sandboxed Ausf\u00fchrung von TypeScript-Workflows, um komplexe, zustandsbehaftete Operationen au\u00dferhalb des Modells zu verwalten.",
+        "Enth\u00e4lt agentenfreundliche Funktionen wie `suggest_approach` und Effizienzmetriken, um die Interaktion und Selbstkorrektur des Agenten zu verbessern."
+      ],
+      "usecase_for_us": "both",
+      "scraped_at": "2026-03-16T13:42:37.436511"
+    },
+    {
+      "repo_url": "https://github.com/3D-Tech-Solutions/code-scalpel",
+      "stars": 10,
+      "description": "Code Scalpel is the bridge between **Generative AI** and **Reliable Software Engineering**. It is an **MCP (Model Context Protocol) server** designed to be the primary toolset for AI agents (like Claude, GitHub Copilot, and Cursor) to perceive, analyze, and modify codebases with surgical precision.",
+      "communication_pattern": "mcp",
+      "key_insights": [
+        "Code Scalpel acts as an MCP (Model Context Protocol) server, enabling AI agents to interact with codebases.",
+        "It allows AI agents to surgically extract and analyze code, reducing token usage and costs compared to pasting entire files.",
+        "The system provides a set of core tools for parsing, analysis, and modification of code across multiple programming languages.",
+        "It is designed to be standalone by default but also offers enterprise compatibility through adapters for existing AppSec and governance tools.",
+        "Code Scalpel can be integrated into agent environments, such as via Aegis-OS, to provide governed and policy-enforced access to code analysis."
+      ],
+      "usecase_for_us": "claude_to_claw",
+      "scraped_at": "2026-03-16T13:42:21.716656"
+    },
+    {
+      "repo_url": "https://github.com/alii13/Antigravity-cursor-proxy",
+      "stars": 10,
+      "description": "Use Google's Gemini 3 & Claude 4.5 models in Cursor IDE. An OpenAI-compatible proxy with fully Agentic support (Composer Mode, Tools, Vision) that bridges your local Cloud Code session.",
+      "communication_pattern": "mcp",
+      "key_insights": [
+        "The project acts as a Man-in-the-Middle Proxy (MCP) to translate protocols between OpenAI-compatible clients (Cursor IDE) and Google's Agentic models (Gemini 3, Claude 4.5).",
+        "It specifically converts OpenAI requests into Google's Agentic format and injects 'Thought Signatures' required for tool calling, indicating a deep understanding of the target API's internal workings.",
+        "Authentication is handled by bridging local Cloud Code session tokens, eliminating the need for manual API keys.",
+        "A Cloudflare Quick Tunnel is used to expose the local proxy server via a secure, temporary HTTPS endpoint, addressing security and networking requirements of IDEs like Cursor.",
+        "The proxy supports multiple models (Gemini 3 Pro/Flash, Claude 4.5 Sonnet/Opus/Haiku) by mapping them to specific IDs within the Cursor IDE."
+      ],
+      "usecase_for_us": "both",
+      "scraped_at": "2026-03-16T13:42:21.976154"
+    },
+    {
+      "repo_url": "https://github.com/MattArtzAnthro/gephi-ai",
+      "stars": 10,
+      "description": "Extends Gephi with AI capabilities. Includes a Gephi plugin for graph analytics, an MCP server bridging AI assistants and Gephi, a Claude Code plugin with slash commands and workflow skills, and a specialized agent for network analysis research. Built for researchers working across network science and AI.",
+      "communication_pattern": "mcp",
+      "key_insights": [
+        "Das Repository implementiert das Model Context Protocol (MCP) als prim\u00e4res Kommunikationsmuster zwischen AI-Assistenten (wie Claude) und der Gephi-Anwendung.",
+        "Es gibt einen MCP-Server (Python), der als Br\u00fccke zwischen dem AI-Assistenten und einem Gephi-Plugin fungiert. Der MCP-Server kommuniziert \u00fcber HTTP API mit dem Gephi-Plugin.",
+        "Die Kommunikation erfolgt bidirektional: AI-Assistenten senden Befehle an Gephi \u00fcber den MCP-Server, und Gephi kann Statusinformationen oder Ergebnisse zur\u00fcckgeben.",
+        "Das System nutzt 'Tools' (73 an der Zahl) als spezifische Funktionen, die der AI-Assistent \u00fcber MCP aufrufen kann, um Gephi zu steuern (z.B. Graphen erstellen, Analysen durchf\u00fchren, Visualisierungen exportieren).",
+        "Zus\u00e4tzlich zu den reinen MCP-Tools bietet ein Claude Code Plugin erweiterte Funktionen wie Slash-Befehle, einen spezialisierten Agenten und 'Skills', die Claude beibringen, wie man Gephi effektiv nutzt und Best Practices anwendet."
+      ],
+      "usecase_for_us": "claude_to_claw",
+      "scraped_at": "2026-03-16T13:42:22.404167"
+    },
+    {
+      "repo_url": "https://github.com/kelicblan/seerlord_ai",
+      "stars": 10,
+      "description": "SeerLord AI : The next-generation modular AI agent orchestration platform based on micro-kernel architecture and LangGraph. It natively supports the MCP protocol and Human-in-the-loop collaboration, making complex agent development more stable and flexible.",
+      "communication_pattern": "mcp",
+      "key_insights": [
+        "SeerLord AI nutzt das Model Context Protocol (MCP) f\u00fcr die standardisierte Kommunikation zwischen Agents und externen Tools (Dateisysteme, GitHub, Datenbanken).",
+        "Die Plattform basiert auf einer Micro-Kernel-Architektur mit Plugins, wobei Plugins als Business Agents fungieren und \u00fcber den Kernel kommunizieren.",
+        "LangGraph wird f\u00fcr die Orchestrierung komplexer, zustandsbehafteter Multi-Agent-Workflows verwendet, was auf interne Agentenkommunikation innerhalb des Graphen hindeutet.",
+        "Human-in-the-loop-Funktionen erm\u00f6glichen eine Kommunikation zwischen Agenten und menschlichen Benutzern zur Genehmigung oder Korrektur.",
+        "Das System unterst\u00fctzt sowohl automatische Intent-Erkennung als auch manuelle Agenten-Auswahl, was verschiedene Kommunikationswege f\u00fcr Benutzeranfragen impliziert."
+      ],
+      "usecase_for_us": "both",
+      "scraped_at": "2026-03-16T13:42:38.324438"
+    },
+    {
+      "repo_url": "https://github.com/WhoMeta-Inc/unifiedagentprotocol",
+      "stars": 10,
+      "description": "The Unified Agent Protocol (UAP) is an open interoperability layer for defining, registering, executing, and orchestrating AI agents and tools across diverse ecosystems. It standardizes how agents and tools are described and translated between platforms like LangChain, OpenWebUI, OpenAPI, and MCP \u2014 enabling portable, composable, and vendor-neutral ",
+      "communication_pattern": "mcp",
+      "key_insights": [
+        "UAP acts as a universal adapter for AI agents and tools, standardizing their definition, registration, execution, and orchestration across diverse ecosystems.",
+        "It provides multi-source parsers to import tools from various formats (e.g., OpenWebUI, LangChain, OpenAPI) and export bridges to convert UAP agents/tools into other protocols like A2A, MCP, and OpenAPI.",
+        "The core SDK is a Python implementation that works offline and focuses on schema definition, automatic conversions, and full schema introspection.",
+        "UAP aims to solve fragmentation and lack of universal abstraction in the AI agent ecosystem by providing a common schema and protocol.",
+        "The `to_mcp()` export bridge explicitly indicates support for the Model Context Protocol (MCP)."
+      ],
+      "usecase_for_us": "both",
+      "scraped_at": "2026-03-16T13:42:36.451408"
+    },
+    {
+      "repo_url": "https://github.com/Lennith/EasyAgentTeam",
+      "stars": 10,
+      "description": "A self-built practice project for a task-driven multi-agent collaboration framework. It orchestrates role-based AI agents (PM/Manager/Dev/QA style) to create, assign, discuss, and report tasks through a backend-first protocol, with session lifecycle control, dependency-gated dispatch, and full event/timeline observability.",
+      "communication_pattern": "mcp",
+      "key_insights": [
+        "Orchestriert rollenbasierte KI-Agenten (PM/Manager/Dev/QA) f\u00fcr Aufgaben, Zuweisungen, Diskussionen und Berichte.",
+        "Verwendet ein 'Backend-first protocol' f\u00fcr die Agentenkommunikation und -koordination.",
+        "Bietet Session-Lebenszykluskontrolle und abh\u00e4ngigkeitsgesteuerte Aufgabenverteilung.",
+        "Umfassende Beobachtbarkeit durch Ereignisse, Zeitachsen und Aufgabenb\u00e4ume.",
+        "Fokus auf 'Task-driven multi-agent collaboration framework' mit expliziter Rollenverteilung."
+      ],
+      "usecase_for_us": "both",
+      "scraped_at": "2026-03-16T13:42:37.301468"
+    },
+    {
+      "repo_url": "https://github.com/SeemplicityDev/arbetern",
+      "stars": 10,
+      "description": "An orchestration platform for AI agents in the enterprise. Slack bot that integrates with GitHub Models API. Analyses channel messages, modifies files via PRs, and answers general questions using an LLM agent with tool calling.",
+      "communication_pattern": "webhook",
+      "key_insights": [
+        "Uses Slack slash commands as webhooks to trigger agent interactions.",
+        "Agents are isolated classifiers with dedicated prompts, RBAC policies, and tool palettes.",
+        "Intent classification is based on Bernoulli Naive Bayes model, using keyword matching for binary feature evaluation.",
+        "Tool execution is an iterative loop, refining responses by updating the posterior with tool results.",
+        "Dynamic model selection and tool availability based on runtime state and detected features.",
+        "Thread sessions provide temporal memory, using prior messages as additional evidence for classification.",
+        "No external orchestrator or shared state bus; communication is primarily request-response initiated by webhooks."
+      ],
+      "usecase_for_us": "claude_to_claw",
+      "scraped_at": "2026-03-16T13:42:38.387252"
+    },
+    {
+      "repo_url": "https://github.com/nathangtg/agent-hub",
+      "stars": 9,
+      "description": "Agent Hub is an AI orchestration platform that transforms how developers and DevOps engineers interact with their toolchain. Built on the cutting-edge Model Context Protocol (MCP), it provides intelligent automation through specialized AI agents, seamlessly integrating with GitHub, Azure, security tools, and data processing",
+      "communication_pattern": "mcp",
+      "key_insights": [
+        "The platform explicitly states it's 'Built on the cutting-edge Model Context Protocol (MCP)', indicating MCP as the primary communication pattern for agents and tools.",
+        "The architecture diagram shows an 'MCP Protocol Layer' with an 'MCP Tools Server' acting as an intermediary between the specialized agents (GitHub Agent, Azure Agent, etc.) and external integrations (GitHub API, Azure Services, etc.).",
+        "The 'Agent Orchestration Flow' describes a 'Dynamic Tool Composition' and 'Tool Execution' phase, implying that agents interact with tools via a standardized protocol, which is identified as MCP.",
+        "The 'Component Overview' table lists 'MCP Server' with 'FastMCP' and '50+ Tools', reinforcing the role of MCP in integrating a wide range of tools for agents."
+      ],
+      "usecase_for_us": "both",
+      "scraped_at": "2026-03-16T13:42:38.278954"
+    },
+    {
+      "repo_url": "https://github.com/camel-ai/camel-scale",
+      "stars": 9,
+      "description": "CAMEL-SCALE: An auto-scalable message queue system for agent communication and LLM backend load balancing for large-scale multi-agent systems.",
+      "communication_pattern": "queue",
+      "key_insights": [
+        "CAMEL-SCALE implements an auto-scalable message queue system.",
+        "It is designed for agent communication in large-scale multi-agent systems.",
+        "It also handles LLM backend load balancing."
+      ],
+      "usecase_for_us": "both",
+      "scraped_at": "2026-03-16T13:42:37.747833"
+    },
+    {
+      "repo_url": "https://github.com/The-Swarm-Corporation/SwarmDB",
+      "stars": 8,
+      "description": "A production-grade message queue system for agent communication and LLM backend load balancing in large-scale multi-agent systems. This system provides a scalable solution using Apache Kafka for reliable message distribution with comprehensive features for agent communication, message management, and load balancing",
+      "communication_pattern": "queue",
+      "key_insights": [
+        "Verwendet Apache Kafka als robuste und skalierbare Message Queue f\u00fcr die Agentenkommunikation.",
+        "Bietet eine RESTful API (FastAPI) f\u00fcr Agenten, um Nachrichten zu senden und zu empfangen, was die Integration vereinfacht.",
+        "Unterst\u00fctzt verschiedene Nachrichtentypen (Chat, Befehle, Funktionsaufrufe) und Gruppenkommunikation.",
+        "Implementiert Funktionen wie Auto-Partitionierung, Zustandsverwaltung, Persistenz und Lastverteilung f\u00fcr LLM-Backends.",
+        "Fokus auf Produktionsreife mit Authentifizierung, Autorisierung, detaillierter Protokollierung und Containerisierung."
+      ],
+      "usecase_for_us": "both",
+      "scraped_at": "2026-03-16T13:42:38.807318"
+    },
+    {
+      "repo_url": "https://github.com/Emqo/AgentCliBridge",
+      "stars": 7,
+      "description": "Bridges CLI-based AI agents (Claude, Codex, Gemini) to chat platforms (Telegram, Discord) with scheduled a                uto-tasks, autonomous project management, HITL approval, conditional branching, webhook triggers, parallel execution, and ob                 servability",
+      "communication_pattern": "mcp",
+      "key_insights": [
+        "Bridges CLI-based AI agents (Claude, Codex, Gemini) to chat platforms (Telegram, Discord) by spawning the CLI as a subprocess with JSON streaming.",
+        "Features a 'Skill System' where agents use `agent-cli-bridge-ctl` through Bash to manage memories, tasks, and auto-tasks, enabling natural language interaction.",
+        "Implements a 'Dispatcher Architecture' (Master-Worker Sessions) where a master dispatcher routes messages to concurrent sub-sessions based on intelligent routing and session summaries.",
+        "Supports Human-in-the-Loop (HITL) for critical tasks, conditional branching, webhook triggers (HTTP API, GitHub, cron), and parallel execution of auto-tasks.",
+        "Provides per-user workspace isolation, session persistence, multi-endpoint rotation, and observability features."
+      ],
+      "usecase_for_us": "both",
+      "scraped_at": "2026-03-16T13:42:22.389880"
+    },
+    {
+      "repo_url": "https://github.com/littlebearapps/untether",
+      "stars": 7,
+      "description": "Code from anywhere \u2014 Telegram bridge for AI coding agents (Claude Code, Codex, OpenCode, Pi, Gemini CLI, Amp). Stream progress, approve actions, and send tasks by voice from your phone.",
+      "communication_pattern": "mcp",
+      "key_insights": [
+        "Untether acts as a bridge between AI coding agents running on a local machine and a Telegram bot.",
+        "Users interact with the AI agents via Telegram (text or voice), sending tasks and receiving real-time progress updates.",
+        "The system supports interactive approvals and decision-making through inline buttons in Telegram, allowing remote control over agent actions.",
+        "It enables asynchronous operation: agents run in the background on the user's machine, independent of the Telegram client's status.",
+        "The pattern involves a central communication hub (Telegram) that orchestrates interactions between a human user and multiple AI agents/tools."
+      ],
+      "usecase_for_us": "both",
+      "scraped_at": "2026-03-16T13:42:23.516524"
+    },
+    {
+      "repo_url": "https://github.com/Cognitive-Stack/agent-stream",
+      "stars": 7,
+      "description": "A modular Python package for real-time agent message streaming and filtering, designed for LLM/AI agent systems. Provides composable stream filters and streaming utilities for RabbitMQ and more.",
+      "communication_pattern": "queue",
+      "key_insights": [
+        "Das Repository implementiert ein Echtzeit-Nachrichten-Streaming- und Filter-Framework f\u00fcr LLM/AI-Agentensysteme.",
+        "Es nutzt RabbitMQ als prim\u00e4res Messaging-Backend, was auf ein asynchrones, nachrichtenbasiertes Kommunikationsmuster hindeutet.",
+        "Das System erm\u00f6glicht das Filtern von Agenten-Nachrichten basierend auf verschiedenen Kriterien wie Funktionsaufrufen, Textinhalten oder der Quelle des Agenten.",
+        "Es bietet auch Unterst\u00fctzung f\u00fcr Server-Sent Events (SSE) f\u00fcr Echtzeit-Webanwendungen, was eine unidirektionale Kommunikation vom Server zum Client darstellt.",
+        "Die Architektur ist modular und erweiterbar, um neue Filter, Streaming-Backends und Manager zu integrieren."
+      ],
+      "usecase_for_us": "both",
+      "scraped_at": "2026-03-16T13:42:39.671659"
+    },
+    {
+      "repo_url": "https://github.com/IBJunior/local-agent-docker-model-runner",
+      "stars": 6,
+      "description": "A flexible, extensible AI agent backend built with NestJS\u2014designed for running local, open-source LLMs (Llama, Gemma, Qwen, DeepSeek, etc.) via Docker Model Runner. Real-time streaming, Redis messaging, web search, and Postgres memory out of the box. No cloud APIs required!",
+      "communication_pattern": "mcp",
+      "key_insights": [
+        "Verwendet Redis Pub/Sub f\u00fcr Echtzeit-Nachrichten\u00fcbermittlung zwischen Agent und Frontend (oder anderen Diensten).",
+        "Bietet HTTP-API-Endpunkte f\u00fcr die Interaktion mit dem Agenten (Chat, Stream, Historie).",
+        "Nutzt Server-Sent Events (SSE) f\u00fcr das Streaming von Agentenantworten an Clients.",
+        "Der Agent selbst kommuniziert mit lokalen LLMs \u00fcber Docker Model Runner (HTTP-basiert).",
+        "Integrierte Web-Suche (Tavily) als externes Tool f\u00fcr den Agenten."
+      ],
+      "usecase_for_us": "both",
+      "scraped_at": "2026-03-16T13:42:40.614617"
+    },
+    {
+      "repo_url": "https://github.com/sp-22/omnidrive-mcp",
+      "stars": 5,
+      "description": "Securely share local files with AI agents (Claude, ChatGPT, Gemini) via Model Context Protocol (MCP). Privacy-first, local-only file bridge for LLMs & AI Agents",
+      "communication_pattern": "mcp",
+      "key_insights": [
+        "OmniDrive acts as a local-only file bridge for LLMs and AI agents, enabling them to access local files securely.",
+        "It implements the Model Context Protocol (MCP) for universal compatibility with LLM clients supporting this standard.",
+        "Communication is privacy-first, occurring over a local process pipe or a secure local SSE (Server-Sent Events) bridge, ensuring no files are uploaded to external servers.",
+        "Features granular permissions (Read-Only/Read/Write) and live activity streaming, providing transparency and control over AI interactions with local files.",
+        "Employs a 'Zero Trust' security model with canonical path validation and sandbox isolation to prevent unauthorized access or path traversal."
+      ],
+      "usecase_for_us": "both",
+      "scraped_at": "2026-03-16T13:42:23.272125"
+    },
+    {
+      "repo_url": "https://github.com/wenyuzhao/agentia",
+      "stars": 5,
+      "description": "Ergonomic LLM Agents, with chat messages fully compatible with Vercel AI SDK.",
+      "communication_pattern": "mcp",
+      "key_insights": [
+        "Agentia bietet eine Abstraktionsebene f\u00fcr LLM-Agenten, die die Integration von Tools, MCPs (Multi-Agent Communication Protocol) und Skills erm\u00f6glicht.",
+        "Das MCP-Pattern wird explizit durch die `MCP`-Klasse unterst\u00fctzt, die es erlaubt, externe Dienste als Agenten zu integrieren (z.B. einen Taschenrechner-Server).",
+        "Die `magic`-Funktion erm\u00f6glicht die Erstellung von Agent-gesteuerten Funktionen, die nat\u00fcrliche Spracheingaben in strukturierte Ausgaben (Pydantic-Modelle) umwandeln k\u00f6nnen.",
+        "Die Kompatibilit\u00e4t mit Vercel AI SDK Chat-Nachrichten deutet auf eine m\u00f6gliche Integration in Webanwendungen hin.",
+        "Das Framework legt Wert auf Ergonomie und einfache Definition von Tools und Agenten."
+      ],
+      "usecase_for_us": "both",
+      "scraped_at": "2026-03-16T13:42:41.087865"
+    },
+    {
+      "repo_url": "https://github.com/Appointat/AgentSched",
+      "stars": 5,
+      "description": "AgentSched: A scheduler for LLM-based agents that optimizes message routing through load balancing, connection pooling, and dynamic scaling to improve concurrent processing and efficient communication with LLMs.",
+      "communication_pattern": "queue",
+      "key_insights": [
+        "Uses Kafka as a central message broker for robust and scalable communication between agents and LLMs.",
+        "Implements a request-reply pattern via Kafka topics (Request Topics and Response Topic) for asynchronous communication.",
+        "Features a 'Scheduler' component that consumes requests from Kafka, load balances them across an LLM pool, and produces responses back to Kafka.",
+        "Employs connection pooling and dynamic scaling to optimize resource utilization and handle high concurrency.",
+        "Separates concerns into distinct layers: Agent Layer, Kafka Infrastructure, Resource Management, and LLM Model Layer, promoting modularity and scalability."
+      ],
+      "usecase_for_us": "both",
+      "scraped_at": "2026-03-16T13:42:41.584418"
+    },
+    {
+      "repo_url": "https://github.com/deshwalmahesh/outlook-email-agent",
+      "stars": 5,
+      "description": "AI-powered email automation agent that intelligently processes Outlook emails, classifies actionable messages, and generates contextual draft replies using Microsoft Graph API and LLM technology",
+      "communication_pattern": "webhook",
+      "key_insights": [
+        "Uses Microsoft Graph API webhooks for real-time email notifications, enabling immediate processing upon email arrival.",
+        "Employs a FastAPI endpoint to receive webhook notifications, acting as the entry point for external events.",
+        "Processes emails in a background task after receiving a webhook notification, decoupling the notification reception from the potentially long-running processing logic.",
+        "Integrates LLM for classification and draft generation, indicating a sophisticated, AI-driven response mechanism triggered by external events.",
+        "Requires manual subscription creation for the webhook due to ngrok's dynamic URLs, highlighting a potential setup complexity for dynamic environments."
+      ],
+      "usecase_for_us": "none",
+      "scraped_at": "2026-03-16T13:42:40.772500"
+    },
+    {
+      "repo_url": "https://github.com/hari7261/Negotiation-MultiAgent",
+      "stars": 4,
+      "description": "Simulate realistic price negotiations between Buyer and Seller agents using LLM-generated messages and agent logic.",
+      "communication_pattern": "direct",
+      "key_insights": [
+        "The system uses a multi-agent architecture with Buyer, Seller, and Mediator agents.",
+        "Agents communicate directly through message exchange to simulate negotiation rounds.",
+        "The Mediator agent intervenes periodically to facilitate agreement, suggesting compromises.",
+        "Communication is real-time, with dynamic message exchange and live progress tracking.",
+        "The system is designed for synchronous, turn-based interaction between agents during negotiation rounds."
+      ],
+      "usecase_for_us": "both",
+      "scraped_at": "2026-03-16T13:42:41.591478"
+    },
+    {
+      "repo_url": "https://github.com/AIDropout/mini",
+      "stars": 3,
+      "description": "The future of digital agents. \ud83e\udde0 Infinite APIs and tooling. Bring your own prompts, LLM, messaging provider. \u26a1 ",
+      "communication_pattern": "webhook",
+      "key_insights": [
+        "Uses FastAPI for the server, indicating a web-based API for interaction.",
+        "Integrates with Stripe webhooks for payment processing, suggesting external services push events to the application.",
+        "Mentions Telegram bot integration, implying an agent interacting with users via a messaging platform.",
+        "Utilizes Celery for background tasks, which could involve asynchronous processing of agent communications or other events.",
+        "Ngrok is used for exposing local services to the internet, facilitating webhook reception and external access during development/testing."
+      ],
+      "usecase_for_us": "both",
+      "scraped_at": "2026-03-16T13:42:41.856194"
+    },
+    {
+      "repo_url": "https://github.com/glauciodaniel/ai-agents-system-messages",
+      "stars": 3,
+      "description": "Cole\u00e7\u00e3o p\u00fablica de system messages (instru\u00e7\u00f5es de sistema) para aprimorar o desempenho, persona e seguran\u00e7a de diversos agentes de IA/LLMs.",
+      "communication_pattern": "other",
+      "key_insights": [
+        "Das Repository sammelt System-Nachrichten, die als initiale Konfigurations-Prompts f\u00fcr KI-Agenten dienen, um deren Persona, Regeln und Einschr\u00e4nkungen festzulegen.",
+        "Der Fokus liegt auf der Verbesserung der Qualit\u00e4t, Sicherheit, Personalisierung und Produktivit\u00e4t von LLMs durch gut gestaltete System-Nachrichten.",
+        "Es werden verschiedene Kategorien von System-Nachrichten unterschieden, wie z.B. f\u00fcr Experten-Personas, Sicherheits-Guardrails, strukturierte Ausgaben und kreative Stile.",
+        "Die System-Nachrichten sind darauf ausgelegt, die Interaktion mit dem LLM zu steuern und vorhersehbare, leistungsstarke Ergebnisse zu gew\u00e4hrleisten."
+      ],
+      "usecase_for_us": "both",
+      "scraped_at": "2026-03-16T13:42:41.839229"
+    },
+    {
+      "repo_url": "https://github.com/gitgeistai/gitgeist-ai",
+      "stars": 3,
+      "description": "\ud83e\udde0 Autonomous AI Git agent that generates intelligent commit messages using local LLMs and semantic code analysis. 100% free, privacy-first.",
+      "communication_pattern": "direct",
+      "key_insights": [
+        "Utilizes local LLMs (Ollama) for AI-powered commit message generation, ensuring privacy and local processing.",
+        "Offers a CLI for direct user interaction and management of Git operations, including multi-repository support.",
+        "Integrates with GitHub for PR creation and issue management, likely through direct API calls.",
+        "Provides a web dashboard for visual insights, suggesting a local web server for user interaction.",
+        "Employs a 'watch' mode for autonomous, auto-committing behavior, reacting directly to file system changes."
+      ],
+      "usecase_for_us": "none",
+      "scraped_at": "2026-03-16T13:42:41.867073"
+    },
+    {
+      "repo_url": "https://github.com/zxs1633079383/Universal_Interaction",
+      "stars": 3,
+      "description": "This document defines the Universal Interaction Protocol (UIP), a canonical, IM-agnostic interaction protocol that enables any Instant Messaging (IM) system to interact seamlessly with Clawdbot, without requiring awareness of agents, LLMs, prompts, or tools.",
+      "communication_pattern": "webhook",
+      "key_insights": [
+        "Das Universal Interaction Protocol (UIP) dient als IM-agnostische Schicht, die es jedem Instant Messaging System erm\u00f6glicht, mit einem KI-Agenten (Moltbot/Clawdbot) zu interagieren.",
+        "Ein Go-basierter UIP Gateway empf\u00e4ngt Nachrichten von verschiedenen IMs (\u00fcber HTTP) und leitet sie als Webhooks an Moltbot weiter.",
+        "Moltbot sendet Antworten \u00fcber einen Callback-Webhook zur\u00fcck an den UIP Gateway, der die Antwort dann an das urspr\u00fcngliche IM-System weiterleitet.",
+        "Das System unterst\u00fctzt bidirektionale Kommunikation (synchrone Anfragen und asynchrone Callbacks) und ist durch eine Plugin-basierte Adapter-Architektur erweiterbar.",
+        "Die Architektur abstrahiert die Komplexit\u00e4t der verschiedenen IM-Plattformen und erm\u00f6glicht eine zentrale Integration mit dem KI-Agenten."
+      ],
+      "usecase_for_us": "claw_to_claude",
+      "scraped_at": "2026-03-16T13:42:43.307892"
+    },
+    {
+      "repo_url": "https://github.com/oktsec/oktsec",
+      "stars": 3,
+      "description": "Security layer for AI agent-to-agent communication. Every message is signed, inspected, and logged. If it doesn't comply, it doesn't pass. No LLM. No cloud. Single binary. Your infra, your data.",
+      "communication_pattern": "mcp",
+      "key_insights": [
+        "Oktsec acts as a security layer for AI agent-to-agent communication, specifically monitoring and enforcing policies on Model Context Protocol (MCP) tool calls and CLI operations.",
+        "It implements a 10-stage security pipeline including rate limiting, identity verification (Ed25519 signatures), agent suspension, YAML-based ACLs, content scanning (188 detection rules), intent validation, blocked content enforcement, multi-message escalation, auditing (SQLite with content hash and tamper evidence), and anomaly detection.",
+        "Oktsec automatically discovers and supports 17 MCP clients, primarily through wrapping and scanning stdio-based MCP communication, and also offers gateway routing and tool-call interception for some clients like Claude Code.",
+        "It provides real-time interception, detection, blocking, and auditing of agent communications, aligning with OWASP Top 10 for Agentic Applications.",
+        "The system is designed to be self-hosted ('Your infra, your data'), single binary, and does not rely on LLMs or cloud services for its core security functions."
+      ],
+      "usecase_for_us": "both",
+      "scraped_at": "2026-03-16T13:42:43.507665"
+    },
+    {
+      "repo_url": "https://github.com/shashankpc7746/SwarAI",
+      "stars": 3,
+      "description": "SwarAI is a voice-enabled AI assistant that uses multi-agent orchestration, LLM reasoning, and task automation to perform actions like messaging, file search, payment and information retrieval. It is powered by a FastAPI backend with interactive web-based interfaces for seamless user interaction.",
+      "communication_pattern": "mcp",
+      "key_insights": [
+        "SwarAI utilizes a multi-agent orchestration pattern, specifically mentioning CrewAI, to manage interactions between 13 specialized AI agents.",
+        "The system integrates various external services and APIs, including WhatsApp, email, file systems, and system controls, implying agents communicate with these external interfaces.",
+        "A FastAPI backend with WebSocket support enables real-time processing and interaction, suggesting direct communication channels between the frontend and the agent system.",
+        "Conversation memory is managed via MongoDB (optional), indicating a persistent storage mechanism for agent context and communication history.",
+        "The architecture involves an 'AI Enhancement Layer' using Groq LLM for intent detection and command clarity, suggesting an internal communication flow for pre-processing user input before routing to specialized agents."
+      ],
+      "usecase_for_us": "both",
+      "scraped_at": "2026-03-16T13:42:45.140394"
+    },
+    {
+      "repo_url": "https://github.com/House-of-Data/openwebui-n8n-pipe",
+      "stars": 3,
+      "description": "This pipe connects Open WebUI to an external n8n workflow. It sends the user\u2019s current message and metadata to n8n, which routes the request to an AI Agent node (backed by any model provider such as OpenAI, Ollama, or local LLMs) and returns the generated result.",
+      "communication_pattern": "webhook",
+      "key_insights": [
+        "Open WebUI sendet Nachrichten und Metadaten \u00fcber einen konfigurierten Webhook an n8n.",
+        "n8n verarbeitet die Anfrage mit einem AI Agent Node und sendet die Antwort \u00fcber einen 'Respond to Webhook'-Node zur\u00fcck an Open WebUI.",
+        "Die Kommunikation ist nicht-streaming und erwartet eine spezifische JSON-Antwortstruktur von n8n.",
+        "Die Pipe ersetzt den direkten Modellaufruf in Open WebUI durch den Aufruf des n8n-Workflows."
+      ],
+      "usecase_for_us": "both",
+      "scraped_at": "2026-03-16T13:42:44.122857"
+    },
+    {
+      "repo_url": "https://github.com/hwbehrens/axon",
+      "stars": 2,
+      "description": "LLM-first local messaging protocol for secure agent-to-agent communication over QUIC",
+      "communication_pattern": "direct",
+      "key_insights": [
+        "LLM-first design: Minimizes token cost and overhead for agent-to-agent communication.",
+        "Structured-first: Uses JSON payloads, avoiding natural language overhead for machine parsing.",
+        "Secure and authenticated: Employs Ed25519 keypairs, mTLS, and QUIC/TLS 1.3 for zero-trust local communication.",
+        "Daemon-based architecture: Agents connect via Unix sockets to a local daemon, which handles discovery, transport, and security.",
+        "Resumable and context-budget-aware: Designed for frequent agent restarts and efficient use of context.",
+        "Supports both request/response and fire-and-forget (notify) patterns.",
+        "Discovery via mDNS for LAN and static peer configuration for VPN/Tailscale."
+      ],
+      "usecase_for_us": "both",
+      "scraped_at": "2026-03-16T13:42:44.830968"
+    },
+    {
+      "repo_url": "https://github.com/whanyu1212/expense-notifier",
+      "stars": 2,
+      "description": "A automation pipeline for extracting expense data from NotionDB, analysing with LLM Agent and triggering a telegram bot message",
+      "communication_pattern": "direct",
+      "key_insights": [
+        "The system directly connects to NotionDB to extract expense data.",
+        "An LLM Agent directly analyzes the extracted data.",
+        "A Telegram bot message is directly triggered based on the analysis.",
+        "The workflow is sequential and linear, indicating direct calls between components rather than asynchronous messaging or a central orchestrator."
+      ],
+      "usecase_for_us": "none",
+      "scraped_at": "2026-03-16T13:42:44.560204"
+    },
+    {
+      "repo_url": "https://github.com/garygangwu/AutoCrew",
+      "stars": 2,
+      "description": "Self-organizing multi-agent teams powered by LLMs. Give it a task, it designs the agents, assigns tools, and coordinates via message passing. No predefined roles",
+      "communication_pattern": "mcp",
+      "key_insights": [
+        "Self-organizing multi-agent teams: LLM designs custom roles, system prompts, and tool assignments on the fly for each task.",
+        "Message-driven activation: Agents activate each other through explicit messages, not fixed rounds. Only addressed agents run.",
+        "Shared message board: All agents communicate via a persistent JSONL message log, allowing agents to see messages addressed to them, their role, or 'all'.",
+        "Per-agent context: Each agent maintains its own conversation history, keeping context windows focused.",
+        "Orchestrator agent: A meta-orchestrator designs the team, and an orchestrator agent manages the overall flow, including fallback turns and declaring completion."
+      ],
+      "usecase_for_us": "both",
+      "scraped_at": "2026-03-16T13:42:45.330049"
+    }
+  ]
+}

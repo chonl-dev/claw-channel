@@ -43,3 +43,5 @@ Aktueller Stand aller verarbeiteten Tasks.
 2026-03-16 | SOFORT-TEST WhatsApp | Verarbeitet 0KB | ✅
 
 2026-03-16 | website-referenzen-fix | Verarbeitet 1KB | ✅
+
+2026-03-16 | website-investor-text-holen | Verarbeitet 0KB | ✅

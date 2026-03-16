@@ -47,3 +47,5 @@ Aktueller Stand aller verarbeiteten Tasks.
 2026-03-16 | website-investor-text-holen | Verarbeitet 0KB | ✅
 
 2026-03-16 | website-investor-bereich-fix | Verarbeitet 0KB | ✅
+
+2026-03-16 | embedding-service-bauen | Verarbeitet 1KB | ✅

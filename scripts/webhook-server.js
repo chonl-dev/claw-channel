@@ -407,17 +407,8 @@ app.get('/question', (req, res) => {
     const pending = loadPendingQuestions();
     const taskAnswers = loadTaskAnswers(true); // unread only
     
-    // Markiere als gelesen
-    for (const answer of taskAnswers) {
-        const answerFile = path.join(TASK_ANSWERS_DIR, `${answer.task_id}.json`);
-        try {
-            const data = JSON.parse(fs.readFileSync(answerFile, 'utf8'));
-            data.read = true;
-            fs.writeFileSync(answerFile, JSON.stringify(data, null, 2));
-        } catch (e) {
-            console.error(`Fehler beim Markieren als gelesen: ${e.message}`);
-        }
-    }
+    // BUGFIX: NICHT mehr automatisch als gelesen markieren!
+    // Claude muss explizit DELETE /answer/{task_id} aufrufen
     
     res.json({ 
         pending,
@@ -426,6 +417,37 @@ app.get('/question', (req, res) => {
         taskAnswerCount: taskAnswers.length,
         timestamp: new Date().toISOString()
     });
+});
+
+// DELETE /answer/{task_id} - Task-Antwort als gelesen markieren/löschen (von Claude)
+app.delete('/answer/:task_id', (req, res) => {
+    const receivedSecret = req.headers['x-task-secret'];
+    
+    if (receivedSecret !== SECRET) {
+        return res.status(401).json({ error: 'Unauthorized' });
+    }
+    
+    const { task_id } = req.params;
+    const answerFile = path.join(TASK_ANSWERS_DIR, `${task_id}.json`);
+    
+    if (!fs.existsSync(answerFile)) {
+        return res.status(404).json({ error: 'Task answer not found' });
+    }
+    
+    try {
+        // Lösche die Datei (oder markiere als gelesen)
+        fs.unlinkSync(answerFile);
+        console.log(`🗑️ Task-Antwort gelöscht: ${task_id}`);
+        
+        res.json({ 
+            success: true, 
+            task_id,
+            message: 'Task-Antwort gelöscht'
+        });
+    } catch (err) {
+        console.error(`Fehler beim Löschen: ${err.message}`);
+        res.status(500).json({ error: 'Internal server error' });
+    }
 });
 
 // POST /answer - Task-Antwort speichern (von Claw → Claude)
@@ -567,6 +589,7 @@ app.listen(PORT, '0.0.0.0', () => {
     console.log(`   GET  http://91.99.99.242:${PORT}/question - Offene Fragen + Task-Antworten (Claw → Claude)`);
     console.log(`   POST http://91.99.99.242:${PORT}/question - Frage stellen`);
     console.log(`   POST http://91.99.99.242:${PORT}/answer    - Task-Antwort speichern (Claw → Claude)`);
+    console.log(`   DELETE http://91.99.99.242:${PORT}/answer/{task_id} - Task-Antwort löschen (nach Lesen)`);
     console.log(`   Health: http://91.99.99.242:${PORT}/health`);
     console.log(`   Tasks werden gespeichert in: ${TASKS_DIR}`);
     console.log(`   Fragen werden gespeichert in: ${QUESTIONS_DIR}`);

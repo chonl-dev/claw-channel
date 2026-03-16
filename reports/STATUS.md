@@ -227,3 +227,28 @@ GET  /question            - Offene Fragen + Task-Antworten abrufen
 
 **Status:** ✅ Funktioniert! Claude kann jetzt direkt Task-Status abrufen.
 
+
+## Bugfix: GET /question Task-Answers Persistence
+
+**Problem:** Task-Answers wurden sofort als gelesen markiert und verschwanden.
+
+**Lösung:** 
+- GET /question markiert NICHT mehr automatisch als gelesen
+- DELETE /answer/{task_id} für explizites Löschen
+
+**API Flow:**
+```
+1. Claw: POST /answer {task_id, status, result}
+2. Claude: GET /question → sieht taskAnswers (bleibt erhalten!)
+3. Claude: DELETE /answer/{task_id} → löscht nach Verarbeitung
+```
+
+**Test Ergebnis:**
+- POST BUGFIX_TEST: ✅ gespeichert
+- GET /question (1. Mal): ✅ 1 Antwort
+- GET /question (2. Mal): ✅ 1 Antwort (nicht verschwunden!)
+- DELETE /answer/BUGFIX_TEST: ✅ gelöscht
+- GET /question (nach DELETE): ✅ 0 Antworten
+
+**Status:** ✅ Fix funktioniert!
+

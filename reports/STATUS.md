@@ -2,6 +2,27 @@
 
 ## Aktive Konfiguration
 
+## Top 15 Claude Repositories (nach Stars)
+
+| # | Repository | Stars | Usecase | Summary |
+|---|------------|-------|---------|---------|
+| 1 | [prompts.chat](https://github.com/f/prompts.chat) | 152,844 | tools | prompts.chat is the world's largest open-source prompt libra... |
+| 2 | [system-prompts-and-models-of-ai-tools](https://github.com/x1xhlol/system-prompts-and-models-of-ai-tools) | 131,495 | tools | This repository, 'system-prompts-and-models-of-ai-tools', is... |
+| 3 | [NextChat](https://github.com/ChatGPTNextWeb/NextChat) | 87,515 | tools | NextChat is a light and fast AI assistant that supports a wi... |
+| 4 | [everything-claude-code](https://github.com/affaan-m/everything-claude-code) | 79,774 | devcycle | Everything Claude Code is a comprehensive performance optimi... |
+| 5 | [claude-code](https://github.com/anthropics/claude-code) | 78,640 | devcycle | Claude Code ist ein agentenbasiertes Codierungstool, das im ... |
+| 6 | [lobehub](https://github.com/lobehub/lobehub) | 73,760 | skill | LobeHub is an advanced platform designed for building, colla... |
+| 7 | [Pake](https://github.com/tw93/Pake) | 46,674 | tools | Pake is a tool that allows users to convert any webpage into... |
+| 8 | [awesome-claude-skills](https://github.com/ComposioHQ/awesome-claude-skills) | 44,678 | tools | Das Repository "Awesome Claude Skills" bietet eine kuratiert... |
+| 9 | [LocalAI](https://github.com/mudler/LocalAI) | 43,708 | tools | LocalAI is an open-source, self-hosted alternative to commer... |
+| 10 | [ui-ux-pro-max-skill](https://github.com/nextlevelbuilder/ui-ux-pro-max-skill) | 42,697 | skill | UI UX Pro Max is an AI skill designed to provide comprehensi... |
+| 11 | [chatgpt-on-wechat](https://github.com/zhayujie/chatgpt-on-wechat) | 42,241 | skill | CowAgent ist ein auf großen Sprachmodellen basierender KI-As... |
+| 12 | [cherry-studio](https://github.com/CherryHQ/cherry-studio) | 41,585 | skill | Cherry Studio ist ein plattformübergreifender Desktop-Client... |
+| 13 | [oh-my-openagent](https://github.com/code-yeongyu/oh-my-openagent) | 40,484 | devcycle | Oh My OpenCode (omo) is an advanced, open-source agent harne... |
+| 14 | [chatbox](https://github.com/chatboxai/chatbox) | 38,984 | tools | Chatbox is an open-source desktop client for various Large L... |
+| 15 | [GPT_API_free](https://github.com/chatanywhere/GPT_API_free) | 36,692 | tools | GPT_API_free is a project offering free and paid API access ... |
+
+
 ### Webhook Secret
 **Aktuelles Secret:** `be4889d5f57f4c6d63fe3e8174407d40f17a72f9d37d42ed6218657f97af3154`
 

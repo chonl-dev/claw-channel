@@ -57,3 +57,5 @@ Aktueller Stand aller verarbeiteten Tasks.
 2026-03-16 | 3-scripts-final-specs | Verarbeitet 0KB | ✅
 
 2026-03-16 | question-endpoint-bauen | Verarbeitet 0KB | ✅
+
+2026-03-16 | heartbeat-md-erstellen | Verarbeitet 0KB | ✅

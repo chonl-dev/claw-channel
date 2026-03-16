@@ -179,3 +179,5 @@ Gescannt: 150+ Repos | Gefiltert: UI/Chat/Desktop | Analysiert: 147
 | 19 | [crewAI](https://github.com/crewAIInc/crewAI) | 46,240 | framework | workflow | automation | high |
 | 20 | [chatgpt-on-wechat](https://github.com/zhayujie/chatgpt-on-wechat) | 42,241 | framework | workflow | automation | high |
 
+
+2026-03-16 | DEEP_ANALYSE_TOP20 | Verarbeitet 0KB | ✅

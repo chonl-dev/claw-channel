@@ -74,6 +74,9 @@ send_task_answer() {
         return 1
     fi
 }
+
+# Hilfsfunktion: Text für WhatsApp formatieren
+format_for_whatsapp() {
     local text="$1"
     # Begrenze auf 3000 Zeichen
     if [ ${#text} -gt 3000 ]; then

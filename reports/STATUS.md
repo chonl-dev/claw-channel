@@ -256,3 +256,18 @@ GET  /question            - Offene Fragen + Task-Antworten abrufen
 2026-03-17 | KANAL_TEST | Verarbeitet 0KB | ✅
 
 2026-03-17 | TEST_WEBHOOK_SECRET | Verarbeitet 0KB | ✅
+
+## Claude CLI Status
+
+**Geprüft:** 2026-03-17 06:45 UTC
+
+| Check | Ergebnis |
+|-------|----------|
+| `which claude` | ❌ Nicht installiert (Exit: 1) |
+| `claude --version` | ❌ Nicht verfügbar |
+| `node --version` | ✅ v22.22.0 |
+| `ANTHROPIC_API_KEY` | ❌ Nicht gesetzt (leer) |
+
+**Empfohlene Aktionen:**
+1. Claude CLI installieren: `npm install -g @anthropic-ai/claude-cli`
+2. API-Key setzen: `export ANTHROPIC_API_KEY="..."` in ~/.bashrc

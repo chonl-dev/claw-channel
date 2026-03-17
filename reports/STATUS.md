@@ -271,3 +271,24 @@ GET  /question            - Offene Fragen + Task-Antworten abrufen
 **Empfohlene Aktionen:**
 1. Claude CLI installieren: `npm install -g @anthropic-ai/claude-cli`
 2. API-Key setzen: `export ANTHROPIC_API_KEY="..."` in ~/.bashrc
+
+## VPS Stats
+
+**Geprüft:** 2026-03-17 06:47 UTC
+
+### Systemressourcen
+
+| Ressource | Wert |
+|-----------|------|
+| **RAM** | 3.7Gi total / 1.8Gi used / 700Mi free / 1.9Gi available |
+| **Swap** | 0B (deaktiviert) |
+| **Festplatte** | 75G total / 11G used (15%) / 62G avail |
+| **CPU Kerne** | 2 |
+
+### PM2 Prozesse
+
+| id | name | status | cpu | mem | uptime |
+|----|------|--------|-----|-----|--------|
+| 0 | webhook-server | online | 0% | 79.7mb | 11h |
+
+**Status:** ✅ VPS läuft stabil

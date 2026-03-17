@@ -1,0 +1,450 @@
+{
+  "count": 43,
+  "timestamp": "2026-03-17T23:00:00Z",
+  "repos": [
+    {
+      "repo": "fffflabs/yt-intel",
+      "stars": 0,
+      "method": "direct_api",
+      "all_methods": [
+        "direct_api"
+      ],
+      "uses_proxy": false,
+      "language": "TypeScript"
+    },
+    {
+      "repo": "Pythonpreran/YT2Learn",
+      "stars": 0,
+      "method": "proxy_rotation",
+      "all_methods": [
+        "proxy_rotation"
+      ],
+      "uses_proxy": true,
+      "language": "Python"
+    },
+    {
+      "repo": "zszszszsz/.config",
+      "stars": 317,
+      "method": "direct_api",
+      "all_methods": [
+        "direct_api"
+      ],
+      "uses_proxy": false,
+      "language": "Shell"
+    },
+    {
+      "repo": "Ronald106/Surviv.io",
+      "stars": 44,
+      "method": "direct_api",
+      "all_methods": [
+        "direct_api"
+      ],
+      "uses_proxy": false,
+      "language": "unknown"
+    },
+    {
+      "repo": "mishrapeeyush/ytdl-youtube-downloader-proxy-script",
+      "stars": 0,
+      "method": "direct_api",
+      "all_methods": [
+        "direct_api"
+      ],
+      "uses_proxy": false,
+      "language": "Go"
+    },
+    {
+      "repo": "jinahn130/youtubeStockResearch",
+      "stars": 0,
+      "method": "direct_api",
+      "all_methods": [
+        "direct_api"
+      ],
+      "uses_proxy": false,
+      "language": "Python"
+    },
+    {
+      "repo": "KuchikiRenji/youtube-download-automation",
+      "stars": 0,
+      "method": "proxy_rotation",
+      "all_methods": [
+        "proxy_rotation",
+        "yt-dlp"
+      ],
+      "uses_proxy": true,
+      "language": "JavaScript"
+    },
+    {
+      "repo": "soy-tuber/SoyLM",
+      "stars": 5,
+      "method": "direct_api",
+      "all_methods": [
+        "direct_api"
+      ],
+      "uses_proxy": false,
+      "language": "Python"
+    },
+    {
+      "repo": "TayyabAsghar/AgentTube",
+      "stars": 2,
+      "method": "direct_api",
+      "all_methods": [
+        "direct_api"
+      ],
+      "uses_proxy": false,
+      "language": "TypeScript"
+    },
+    {
+      "repo": "viettran1502/video-transcript-tool",
+      "stars": 0,
+      "method": "yt-dlp",
+      "all_methods": [
+        "yt-dlp",
+        "headless_browser"
+      ],
+      "uses_proxy": false,
+      "language": "Python"
+    },
+    {
+      "repo": "itsjwill/RECON",
+      "stars": 0,
+      "method": "direct_api",
+      "all_methods": [
+        "direct_api"
+      ],
+      "uses_proxy": false,
+      "language": "Python"
+    },
+    {
+      "repo": "oop7/YTSage",
+      "stars": 3142,
+      "method": "proxy_rotation",
+      "all_methods": [
+        "proxy_rotation",
+        "cookie_auth",
+        "yt-dlp"
+      ],
+      "uses_proxy": true,
+      "language": "Python"
+    },
+    {
+      "repo": "cirosantilli/china-dictatorship",
+      "stars": 2892,
+      "method": "direct_api",
+      "all_methods": [
+        "direct_api"
+      ],
+      "uses_proxy": false,
+      "language": "HTML"
+    },
+    {
+      "repo": "coursera-dl/edx-dl",
+      "stars": 1972,
+      "method": "yt-dlp",
+      "all_methods": [
+        "yt-dlp"
+      ],
+      "uses_proxy": false,
+      "language": "HTML"
+    },
+    {
+      "repo": "gege-circle/.github",
+      "stars": 1807,
+      "method": "direct_api",
+      "all_methods": [
+        "direct_api"
+      ],
+      "uses_proxy": false,
+      "language": "unknown"
+    },
+    {
+      "repo": "giantpinkrobots/varia",
+      "stars": 1621,
+      "method": "yt-dlp",
+      "all_methods": [
+        "yt-dlp"
+      ],
+      "uses_proxy": false,
+      "language": "Python"
+    },
+    {
+      "repo": "xenova/chat-downloader",
+      "stars": 1137,
+      "method": "direct_api",
+      "all_methods": [
+        "direct_api"
+      ],
+      "uses_proxy": false,
+      "language": "Python"
+    },
+    {
+      "repo": "LussacZheng/video-downloader-deploy",
+      "stars": 587,
+      "method": "proxy_rotation",
+      "all_methods": [
+        "proxy_rotation",
+        "cookie_auth",
+        "yt-dlp"
+      ],
+      "uses_proxy": true,
+      "language": "Batchfile"
+    },
+    {
+      "repo": "NeuralNine/youtube-downloader-converter",
+      "stars": 533,
+      "method": "direct_api",
+      "all_methods": [
+        "direct_api"
+      ],
+      "uses_proxy": false,
+      "language": "Python"
+    },
+    {
+      "repo": "bibanon/tubeup",
+      "stars": 480,
+      "method": "proxy_rotation",
+      "all_methods": [
+        "proxy_rotation",
+        "cookie_auth",
+        "yt-dlp"
+      ],
+      "uses_proxy": true,
+      "language": "Python"
+    },
+    {
+      "repo": "JVT038/MetaTube",
+      "stars": 369,
+      "method": "proxy_rotation",
+      "all_methods": [
+        "proxy_rotation",
+        "yt-dlp"
+      ],
+      "uses_proxy": true,
+      "language": "Python"
+    },
+    {
+      "repo": "pH-7/Download-Simply-Videos-From-YouTube",
+      "stars": 364,
+      "method": "direct_api",
+      "all_methods": [
+        "direct_api"
+      ],
+      "uses_proxy": false,
+      "language": "Python"
+    },
+    {
+      "repo": "cirosantilli/china-dictatroship-7",
+      "stars": 321,
+      "method": "direct_api",
+      "all_methods": [
+        "direct_api"
+      ],
+      "uses_proxy": false,
+      "language": "HTML"
+    },
+    {
+      "repo": "tropicoo/yt-dlp-bot",
+      "stars": 279,
+      "method": "cookie_auth",
+      "all_methods": [
+        "cookie_auth",
+        "yt-dlp"
+      ],
+      "uses_proxy": false,
+      "language": "Python"
+    },
+    {
+      "repo": "molyswu/hand_detection",
+      "stars": 274,
+      "method": "direct_api",
+      "all_methods": [
+        "direct_api"
+      ],
+      "uses_proxy": false,
+      "language": "Python"
+    },
+    {
+      "repo": "mraza007/videodownloader",
+      "stars": 211,
+      "method": "direct_api",
+      "all_methods": [
+        "direct_api"
+      ],
+      "uses_proxy": false,
+      "language": "Python"
+    },
+    {
+      "repo": "mRFWq7LwNPZjaVv5v6eo/cihna-dictattorshrip-8",
+      "stars": 193,
+      "method": "direct_api",
+      "all_methods": [
+        "direct_api"
+      ],
+      "uses_proxy": false,
+      "language": "HTML"
+    },
+    {
+      "repo": "MSC72m/media_downloader",
+      "stars": 176,
+      "method": "cookie_auth",
+      "all_methods": [
+        "cookie_auth"
+      ],
+      "uses_proxy": false,
+      "language": "Python"
+    },
+    {
+      "repo": "panbinibn/OpenPacketFix_",
+      "stars": 176,
+      "method": "direct_api",
+      "all_methods": [
+        "direct_api"
+      ],
+      "uses_proxy": false,
+      "language": "unknown"
+    },
+    {
+      "repo": "thisal-d/pytube-downloader",
+      "stars": 164,
+      "method": "direct_api",
+      "all_methods": [
+        "direct_api"
+      ],
+      "uses_proxy": false,
+      "language": "Python"
+    },
+    {
+      "repo": "javedali99/audio-to-text-transcription",
+      "stars": 158,
+      "method": "direct_api",
+      "all_methods": [
+        "direct_api"
+      ],
+      "uses_proxy": false,
+      "language": "Python"
+    },
+    {
+      "repo": "JannikHv/gydl",
+      "stars": 156,
+      "method": "yt-dlp",
+      "all_methods": [
+        "yt-dlp"
+      ],
+      "uses_proxy": false,
+      "language": "Python"
+    },
+    {
+      "repo": "MAymanKH/YouTube-Downloader",
+      "stars": 127,
+      "method": "direct_api",
+      "all_methods": [
+        "direct_api"
+      ],
+      "uses_proxy": false,
+      "language": "Python"
+    },
+    {
+      "repo": "tterb/yt2mp3",
+      "stars": 103,
+      "method": "direct_api",
+      "all_methods": [
+        "direct_api"
+      ],
+      "uses_proxy": false,
+      "language": "Python"
+    },
+    {
+      "repo": "zpc1314521/PCL2",
+      "stars": 103,
+      "method": "direct_api",
+      "all_methods": [
+        "direct_api"
+      ],
+      "uses_proxy": false,
+      "language": "unknown"
+    },
+    {
+      "repo": "zararashraf/youtube-video-downloader-api",
+      "stars": 99,
+      "method": "direct_api",
+      "all_methods": [
+        "direct_api"
+      ],
+      "uses_proxy": false,
+      "language": "Python"
+    },
+    {
+      "repo": "cccaaannn/telegram_youtube_downloader",
+      "stars": 99,
+      "method": "cookie_auth",
+      "all_methods": [
+        "cookie_auth",
+        "yt-dlp",
+        "po_token",
+        "visitor_data"
+      ],
+      "uses_proxy": false,
+      "language": "Python"
+    },
+    {
+      "repo": "abdelrahman-ahmed-nassar/QuickTube-Youtube-Downloader",
+      "stars": 98,
+      "method": "yt-dlp",
+      "all_methods": [
+        "yt-dlp"
+      ],
+      "uses_proxy": false,
+      "language": "HTML"
+    },
+    {
+      "repo": "hetari/pyutube",
+      "stars": 80,
+      "method": "direct_api",
+      "all_methods": [
+        "direct_api"
+      ],
+      "uses_proxy": false,
+      "language": "Python"
+    },
+    {
+      "repo": "Daravai1234/china-dictatorship",
+      "stars": 75,
+      "method": "direct_api",
+      "all_methods": [
+        "direct_api"
+      ],
+      "uses_proxy": false,
+      "language": "unknown"
+    },
+    {
+      "repo": "mrinalxdev/ProxyDown",
+      "stars": 6,
+      "method": "proxy_rotation",
+      "all_methods": [
+        "proxy_rotation"
+      ],
+      "uses_proxy": true,
+      "language": "Python"
+    },
+    {
+      "repo": "Talhazunair/YouTube-Music-Watchtime-Increaser-and-MassViewer",
+      "stars": 1,
+      "method": "proxy_rotation",
+      "all_methods": [
+        "proxy_rotation",
+        "headless_browser"
+      ],
+      "uses_proxy": true,
+      "language": "Python"
+    },
+    {
+      "repo": "AsirPraveen/mcp-video-to-newsletter-orchestrator",
+      "stars": 0,
+      "method": "direct_api",
+      "all_methods": [
+        "direct_api"
+      ],
+      "uses_proxy": false,
+      "language": "Python"
+    }
+  ]
+}

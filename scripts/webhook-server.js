@@ -135,8 +135,8 @@ app.get('/health', (req, res) => {
     res.json({ status: 'ok', timestamp: new Date().toISOString() });
 });
 
-// Task Endpoint
-app.post('/task', (req, res) => {
+// Task Endpoint - leitet direkt an OpenClaw hooks weiter
+app.post('/task', async (req, res) => {
     const receivedSecret = req.headers['x-task-secret'];
     
     // Secret validieren
@@ -152,11 +152,6 @@ app.post('/task', (req, res) => {
         return res.status(400).json({ error: 'Missing title or content' });
     }
     
-    // Timestamp
-    const timestamp = new Date().toISOString().replace(/[:.]/g, '-');
-    const filename = `task-${Date.now()}.md`;
-    const filepath = path.join(TASKS_DIR, filename);
-    
     // WhatsApp-Benachrichtigung: Task-Eingang (SOFORT SENDEN)
     const whatsappMsg = `📨 Claude → Claw
 
@@ -170,47 +165,32 @@ ${formatForWhatsApp(content)}`;
     sendWhatsAppNotification(whatsappMsg);
     sendWhatsAppViaGateway(whatsappMsg);
     
-    // Task-Datei erstellen
-    const taskContent = `# ${title}
-
-**Priorität:** ${priority}  
-**Empfangen:** ${new Date().toISOString()}  
-**Quelle:** Claude (via Webhook)
-
----
-
-${content}
-
----
-
-*Automatisch erstellt via Webhook*
-`;
-    
+    // Leite Task direkt an OpenClaw hooks weiter
     try {
-        // Stelle sicher dass Verzeichnis existiert
-        if (!fs.existsSync(TASKS_DIR)) {
-            fs.mkdirSync(TASKS_DIR, { recursive: true });
-        }
+        const hookToken = process.env.WEBHOOK_SECRET;
+        const messageContent = `[${title}] ${content}`;
         
-        // Schreibe Datei
-        fs.writeFileSync(filepath, taskContent);
-        console.log(`✅ Task erstellt: ${filename}`);
+        const curlCmd = `curl -s -X POST http://127.0.0.1:18789/hooks/agent \
+            -H "x-openclaw-token: ${hookToken}" \
+            -H "Content-Type: application/json" \
+            -d '{"message":${JSON.stringify(messageContent)},"deliver":true,"channel":"whatsapp","to":"+4915234345561"}' 2>&1`;
         
-        // Trigger Watcher (optional, async)
-        exec('~/scripts/github-watcher.sh >> ~/github-watcher-state/webhook.log 2>&1 &', (error) => {
+        exec(curlCmd, (error, stdout, stderr) => {
             if (error) {
-                console.error('Watcher trigger error:', error);
+                console.error('❌ Hook Weiterleitung fehlgeschlagen:', error.message);
+            } else {
+                console.log('✅ Hook Weiterleitung:', stdout);
             }
         });
         
         res.json({ 
             success: true, 
-            filename,
-            message: 'Task empfangen und verarbeitet'
+            message: 'Task an OpenClaw Hook weitergeleitet',
+            hookForwarded: true
         });
         
     } catch (err) {
-        console.error('❌ Fehler beim Schreiben:', err);
+        console.error('❌ Fehler bei Hook-Weiterleitung:', err);
         res.status(500).json({ error: 'Internal server error' });
     }
 });

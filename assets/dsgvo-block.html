@@ -1,0 +1,80 @@
+<!-- DSGVO Lead-Magnet Block — 15 Maßnahmen fur KI-Einsatz -->
+<section id="dsgvo-lead-magnet" style="background:#0a0a0a;border:2px solid #00a19a;border-radius:12px;padding:32px;margin:24px 0;font-family:'Helvetica Neue',Arial,sans-serif;color:#fff;max-width:720px;">
+  
+  <div style="display:flex;align-items:center;gap:12px;margin-bottom:16px;">
+    <span style="width:40px;height:40px;background:#00a19a;border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:20px;">🛡️</span>
+    <h2 style="margin:0;font-size:22px;font-weight:900;letter-spacing:-0.5px;">DSGVO-Checkliste: 15 Massnahmen fur KI-Einsatz</h2>
+  </div>
+  
+  <p style="color:#888;font-size:15px;line-height:1.7;margin-bottom:20px;">
+    Jeder zweite Mitarbeiter nutzt bereits KI — meist ohne Genehmigung. Diese 15 konkreten Massnahmen zeigen Ihnen, wie Sie Shadow AI erkennen, DSGVO-Compliance aufbauen und Haftungsrisiken minimieren. Entwickelt aus 25+ Jahren IT-Turnaround-Praxis.
+  </p>
+  
+  <ul style="list-style:none;padding:0;margin:0 0 24px 0;display:grid;gap:10px;">
+    <li style="display:flex;align-items:center;gap:10px;color:#ccc;font-size:14px;">
+      <span style="color:#00a19a;font-weight:800;">01</span> Shadow AI Audit — Tools & Methodik
+    </li>
+    <li style="display:flex;align-items:center;gap:10px;color:#ccc;font-size:14px;">
+      <span style="color:#00a19a;font-weight:800;">02</span> AVV-Vorlage fur ChatGPT & Co
+    </li>
+    <li style="display:flex;align-items:center;gap:10px;color:#ccc;font-size:14px;">
+      <span style="color:#00a19a;font-weight:800;">03</span> DSFA-Schnelltest fur KI-Nutzung
+    </li>
+    <li style="display:flex;align-items:center;gap:10px;color:#888;font-size:14px;">
+      <span style="color:#f7941d;">...</span> +12 weitere Massnahmen
+    </li>
+  </ul>
+  
+  <form id="lead-form" style="display:flex;gap:12px;flex-wrap:wrap;align-items:flex-end;">
+    <div style="flex:1;min-width:200px;">
+      <label style="display:block;font-size:12px;font-weight:700;color:#00a19a;text-transform:uppercase;letter-spacing:1px;margin-bottom:6px;">E-Mail</label>
+      <input type="email" name="email" placeholder="ihre@firma.de" required
+        style="width:100%;background:#141414;border:1px solid #2a2a2a;border-radius:8px;padding:12px 16px;color:#fff;font-size:15px;outline:none;transition:border-color 0.2s;"
+        onfocus="this.style.borderColor='#00a19a'" onblur="this.style.borderColor='#2a2a2a'">
+    </div>
+    <button type="submit" 
+      style="background:#f7941d;color:#fff;font-size:15px;font-weight:800;padding:12px 24px;border:none;border-radius:8px;cursor:pointer;transition:transform 0.1s;white-space:nowrap;"
+      onmousedown="this.style.transform='scale(0.98)'" onmouseup="this.style.transform='none'">
+      15 Massnahmen senden →
+    </button>
+  </form>
+  
+  <p style="font-size:12px;color:#555;margin-top:16px;">
+    Kein Spam. Keine Weitergabe. DSGVO-konform verarbeitet. Sie konnen sich jederzeit abmelden.
+  </p>
+  
+  <script>
+  (function(){
+    const form = document.getElementById('lead-form');
+    form.addEventListener('submit', async function(e){
+      e.preventDefault();
+      const email = form.email.value.trim();
+      if (!email) return;
+      
+      const btn = form.querySelector('button');
+      const originalText = btn.textContent;
+      btn.textContent = 'Wird gesendet...';
+      btn.disabled = true;
+      
+      try {
+        // Claw Webhook Endpoint
+        const response = await fetch('http://91.99.99.242:3333/lead', {
+          method: 'POST',
+          headers: {'Content-Type': 'application/json'},
+          body: JSON.stringify({email, source: 'dsgvo-lead-magnet', timestamp: new Date().toISOString()})
+        });
+        
+        if (response.ok) {
+          form.innerHTML = '<div style="background:#00a19a20;border:1px solid #00a19a;border-radius:8px;padding:16px;text-align:center;"><p style="margin:0;color:#00a19a;font-weight:700;">✓ Erfolgreich! Die 15 Massnahmen sind unterwegs.</p><p style="margin:8px 0 0 0;font-size:13px;color:#888;">Prufen Sie Ihren Posteingang in den nachsten Minuten.</p></div>';
+        } else {
+          throw new Error('Webhook failed');
+        }
+      } catch (err) {
+        btn.textContent = originalText;
+        btn.disabled = false;
+        alert('Fehler beim Senden. Bitte versuchen Sie es erneut oder kontaktieren Sie info@agilconsultants.com');
+      }
+    });
+  })();
+  </script>
+</section>

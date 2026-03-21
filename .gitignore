@@ -4,3 +4,10 @@ tasks/completed/
 *.log
 .DS_Store
 .env
+
+# Secrets
+.env
+.env.local
+*.secret
+*.key
+config.local.js

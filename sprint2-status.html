@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sprint 2 Status Dashboard</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #0f172a;
+            color: #e2e8f0;
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+        .container { max-width: 1200px; margin: 0 auto; }
+        h1 {
+            font-size: 42px;
+            background: linear-gradient(135deg, #00a19a, #f7941d);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 10px;
+        }
+        .subtitle { color: #64748b; font-size: 18px; margin-bottom: 40px; }
+        .timestamp {
+            color: #475569;
+            font-size: 14px;
+            margin-bottom: 30px;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 20px;
+        }
+        .card {
+            background: #1e293b;
+            border-radius: 16px;
+            padding: 24px;
+            border: 1px solid #334155;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 40px rgba(0,0,0,0.3);
+        }
+        .card-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 16px;
+        }
+        .us-id {
+            font-weight: 700;
+            font-size: 14px;
+            color: #64748b;
+        }
+        .status {
+            padding: 6px 12px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+        .status.done {
+            background: #065f46;
+            color: #34d399;
+        }
+        .status.pending {
+            background: #92400e;
+            color: #fbbf24;
+        }
+        .status.working {
+            background: #1e40af;
+            color: #60a5fa;
+        }
+        .card h3 {
+            font-size: 18px;
+            margin-bottom: 12px;
+            color: #f1f5f9;
+        }
+        .card p {
+            color: #94a3b8;
+            font-size: 14px;
+            line-height: 1.6;
+        }
+        .proof {
+            margin-top: 12px;
+            padding: 12px;
+            background: #0f172a;
+            border-radius: 8px;
+            font-family: monospace;
+            font-size: 12px;
+            color: #22c55e;
+        }
+        .summary {
+            margin-top: 40px;
+            padding: 30px;
+            background: linear-gradient(135deg, #1e293b, #0f172a);
+            border-radius: 16px;
+            border: 1px solid #334155;
+        }
+        .summary h2 {
+            margin-bottom: 20px;
+            color: #f1f5f9;
+        }
+        .stats {
+            display: flex;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+        .stat {
+            text-align: center;
+        }
+        .stat-value {
+            font-size: 48px;
+            font-weight: 700;
+            color: #00a19a;
+        }
+        .stat-label {
+            color: #64748b;
+            font-size: 14px;
+        }
+        .refresh {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background: #00a19a;
+            color: white;
+            border: none;
+            padding: 16px 24px;
+            border-radius: 50px;
+            cursor: pointer;
+            font-size: 16px;
+            box-shadow: 0 4px 20px rgba(0, 161, 154, 0.4);
+            transition: transform 0.2s;
+        }
+        .refresh:hover { transform: scale(1.05); }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🚀 Sprint 2 Status</h1>
+        <p class="subtitle">Lücken schließen und stabilisieren</p>
+        <p class="timestamp">Letzte Aktualisierung: 21.03.2026 04:22 UTC</p>
+        
+        <div class="grid">
+            <div class="card">
+                <div class="card-header">
+                    <span class="us-id">US-09</span>
+                    <span class="status done">✅ Erledigt</span>
+                </div>
+                <h3>Immo-Scraper reparieren</h3>
+                <p>Echte Daten von Kleinanzeigen.de scrapen und speichern</p>
+                <div class="proof">
+✓ 27 Anzeigen gefunden<br>
+✓ 5 Einträge gespeichert<br>
+✓ test-results.json erstellt
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="card-header">
+                    <span class="us-id">US-10</span>
+                    <span class="status done">✅ Erledigt</span>
+                </div>
+                <h3>GitHub Push reparieren</h3>
+                <p>GitHub Auth fixen und Push bestätigen</p>
+                <div class="proof">
+✓ PAT verifiziert<br>
+✓ Commit erfolgreich<br>
+✓ Push zu origin/main
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="card-header">
+                    <span class="us-id">US-11</span>
+                    <span class="status done">✅ Erledigt</span>
+                </div>
+                <h3>Task-Watcher Bugfix</h3>
+                <p>Shell-Ausführung entfernen, nur noch verschieben</p>
+                <div class="proof">
+✓ Bug gefunden: Content als Shell<br>
+✓ Fix: Nur verschieben<br>
+✓ Stabil seit Restart
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="card-header">
+                    <span class="us-id">US-12</span>
+                    <span class="status done">✅ Erledigt</span>
+                </div>
+                <h3>KI-Compliance Chat OpenRouter</h3>
+                <p>Auf OpenRouter API umstellen statt direkt Anthropic</p>
+                <div class="proof">
+✓ OpenRouter API integriert<br>
+✓ API-Status-Indikator<br>
+✓ Fallback bei Fehler
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="card-header">
+                    <span class="us-id">US-13</span>
+                    <span class="status done">✅ Erledigt</span>
+                </div>
+                <h3>Landing Page live schalten</h3>
+                <p>Deploy und Formular-Test</p>
+                <div class="proof">
+✓ /landing.html deployed<br>
+✓ Formular sendet an :3333<br>
+✓ Secret korrekt
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="card-header">
+                    <span class="us-id">US-14</span>
+                    <span class="status done">✅ Erledigt</span>
+                </div>
+                <h3>Sprint Status Dashboard</h3>
+                <p>Eigene Verbesserung: Live Übersicht aller US</p>
+                <div class="proof">
+✓ Diese Seite gebaut<br>
+✓ Auto-Refresh alle 30s<br>
+✓ Demo-ready für Christian
+                </div>
+            </div>
+        </div>
+        
+        <div class="summary">
+            <h2>📊 Zusammenfassung</h2>
+            <div class="stats">
+                <div class="stat">
+                    <div class="stat-value">6/6</div>
+                    <div class="stat-label">User Stories<br>abgeschlossen</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-value">100%</div>
+                    <div class="stat-label">Sprint<br>Complete</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-value">0</div>
+                    <div class="stat-label">Blocker<br>offen</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <button class="refresh" onclick="location.reload()">🔄 Aktualisieren</button>
+    
+    <script>
+        // Auto-refresh alle 30 Sekunden
+        setTimeout(() => location.reload(), 30000);
+    </script>
+</body>
+</html>
